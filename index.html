@@ -18,16 +18,21 @@
 				top: 40px;
 			}
 
-			#sjword {
+			.word {
+				width: 100%;
 				position: absolute;
-				top: 40%;
-				left: 50%;
-				margin-top: -10px;
-				margin-left: -550px;
-				font-family: "bradley hand itc";
-				font-weight: 900;
+				font-family: "PFSR";
 				font-size: 30px;
 				color: #2ECC71;
+				text-align: center;
+			}
+			
+			.myword{
+				top: 35%;
+			}
+			
+			.sjword{
+				top: 40%;
 			}
 
 			.fake {
@@ -41,7 +46,8 @@
 		<a href="html/awesome/Bclock.html" class="L-to-clock">Binary Clock</a>
 		<a href="html/awesome/D3js.html" class="L-to-d3js">D3js</a>
 
-		<div id="sjword">If today were the last day of my life, would I want to do what I am about to do today?</div>
+		<div class="word myword">好看的皮囊千篇一律，有趣的灵魂百里挑一</div>
+		<div class="word sjword">If today were the last day of my life, would I want to do what I am about to do today?</div>
 
 		<!-- <div class="fake"></div>
 		<div aos="fade-up" aos-easing="ease">If today were the last day of my life, would I want to do what I am about to do today?</div>
@@ -50,15 +56,6 @@
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="lib/aos/aos.js" type="text/javascript" charset="utf-8"></script>
 		<script>
-			var changeML = function() {
-				sjwordWidth = ($("#sjword").width()) / 2;
-				$("#sjword").css("margin-left", -sjwordWidth + "px");
-			}
-			
-			window.onresize = function() {
-				changeML();
-			}
-			
 			AOS.init({
 				easing: 'ease-out-back',
 				duration: 1000

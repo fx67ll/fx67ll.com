@@ -1,3 +1,8 @@
+@font-face {  
+	font-family: PFSR;  
+	src: url("../lib/TTF/PingFang SC Regular.otf"); 
+}  
+
 *{
 	margin: 0;
 	padding: 0;
@@ -19,6 +24,7 @@ body::-webkit-scrollbar {
 	top: 0;
 	text-decoration: none;
 	color: #2ECC71;
+	font-family: "PFSR";
 	font-size: 22px;
 	line-height: 40px;
 	text-align: center;
@@ -32,6 +38,7 @@ body::-webkit-scrollbar {
 	top: 0;
 	text-decoration: none;
 	color: #2ECC71;
+	font-family: "PFSR";
 	font-size: 22px;
 	line-height: 40px;
 	text-align: center;
@@ -45,7 +52,7 @@ body::-webkit-scrollbar {
 	top: 0;
 	text-decoration: none;
 	color: #2ECC71;
-	font-family: "微软雅黑";
+	font-family: "PFSR";
 	font-size: 22px;
 	line-height: 40px;
 	text-align: center;
