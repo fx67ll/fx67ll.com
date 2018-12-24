@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js/checkDevice.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="Content-Language" content="zh-cn">
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+		<meta name="author" content="dankefx67llpr@gmail.com" />
+		<meta name="description" content="fx67ll">
+		<meta name="keywords" content="fx67ll">
+		<meta name="robots" content="fx67ll" />
+		<meta name="baidu-site-verification" content="i80rGEx1pP" />
+		<title>fx67ll的主页</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="lib/aos/aos.css" />
+		<link rel="stylesheet" type="text/css" href="css/L-css.css" />
+		<style type="text/css">
+			.L-to-d3js {
+				top: 40px;
+			}
+
+			#sjword {
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				margin-top: -10px;
+				margin-left: -550px;
+				font-family: "bradley hand itc";
+				font-weight: 900;
+				font-size: 30px;
+				color: #2ECC71;
+			}
+
+			.fake {
+				width: 100%;
+				height: 1000px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<a href="html/awesome/Bclock.html" class="L-to-clock">Binary Clock</a>
+		<a href="html/awesome/D3js.html" class="L-to-d3js">D3js</a>
+
+		<div id="sjword">If today were the last day of my life, would I want to do what I am about to do today?</div>
+
+		<!-- <div class="fake"></div>
+		<div aos="fade-up" aos-easing="ease">If today were the last day of my life, would I want to do what I am about to do today?</div>
+		<div class="fake"></div> -->
+
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="lib/aos/aos.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var changeML = function() {
+				sjwordWidth = ($("#sjword").width()) / 2;
+				$("#sjword").css("margin-left", -sjwordWidth + "px");
+			}
+			
+			window.onresize = function() {
+				changeML();
+			}
+			
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
+		<script src="http://tajs.qq.com/stats?sId=66125698" type="text/javascript" charset="UTF-8"></script>
+	</body>
+</html>

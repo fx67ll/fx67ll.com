@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body,html {
+	background-color: rgba(236, 240, 241, 1);
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.L-to-index {
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-decoration: none;
+	color: #2ECC71;
+	font-size: 22px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.L-to-clock {
+	width: 150px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-decoration: none;
+	color: #2ECC71;
+	font-size: 22px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.L-to-d3js {
+	width: 150px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-decoration: none;
+	color: #2ECC71;
+	font-family: "微软雅黑";
+	font-size: 22px;
+	line-height: 40px;
+	text-align: center;
+}
