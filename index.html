@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?ac98853b12188ef00e03dbfc6a36cf6b";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
 	<head>
 		<script src="js/checkDevice.js" type="text/javascript" charset="utf-8"></script>
 		<meta http-equiv="Content-Language" content="zh-cn">
@@ -13,41 +22,21 @@
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="lib/aos/aos.css" />
 		<link rel="stylesheet" type="text/css" href="css/L-css.css" />
-		<style type="text/css">
-			.L-to-d3js {
-				top: 40px;
-			}
-
-			.word {
-				width: 100%;
-				position: absolute;
-				font-family: "PFSR";
-				font-size: 30px;
-				color: #2ECC71;
-				text-align: center;
-			}
-			
-			.myword{
-				top: 35%;
-			}
-			
-			.sjword{
-				top: 40%;
-			}
-
-			.fake {
-				width: 100%;
-				height: 1000px;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/L-index.css"/>
 	</head>
 
 	<body>
-		<a href="html/awesome/Bclock.html" class="L-to-clock">Binary Clock</a>
-		<a href="html/awesome/D3js.html" class="L-to-d3js">D3js</a>
+		<a href="html/code/code.html" class="L-to-a L-to-code">Code</a>
+		<a href="html/bvb/bvb.html" class="L-to-a L-to-bvb">BVB</a>
+		<a href="html/film/film.html" class="L-to-a L-to-film">Film</a>
+		<a href="html/photo/photo.html" class="L-to-a L-to-photo">Photo</a>
+		<a href="html/file/file.html" class="L-to-a L-to-file">File</a>
+		
+		<a href="html/code/Bclock.html" class="L-to-a L-to-bclock">Binary Clock</a>
+		<a href="html/code/D3js.html" class="L-to-a L-to-d3js">D3js</a>
 
-		<div class="word myword">好看的皮囊千篇一律，有趣的灵魂百里挑一</div>
-		<div class="word sjword">If today were the last day of my life, would I want to do what I am about to do today?</div>
+		<!-- <div class="word myword">好看的皮囊千篇一律，有趣的灵魂百里挑一</div>
+		<div class="word sjword">If today were the last day of my life, would I want to do what I am about to do today?</div> -->
 
 		<!-- <div class="fake"></div>
 		<div aos="fade-up" aos-easing="ease">If today were the last day of my life, would I want to do what I am about to do today?</div>
@@ -61,6 +50,5 @@
 				duration: 1000
 			});
 		</script>
-		<script src="http://tajs.qq.com/stats?sId=66125698" type="text/javascript" charset="UTF-8"></script>
 	</body>
 </html>
