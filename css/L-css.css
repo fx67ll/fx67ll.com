@@ -1,6 +1,6 @@
 @font-face {  
-	font-family: PFSR;  
-	src: url("../lib/TTF/PingFang SC Regular.otf"); 
+	font-family: "PFSR";  
+	src: url("../lib/OTF/PingFang SC Regular.otf"); 
 }  
 
 *{
