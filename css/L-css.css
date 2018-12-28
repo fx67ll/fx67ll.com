@@ -1,7 +1,7 @@
 /* PingFang SC Regular */
 @font-face {
 	font-family: "PFR";
-	src: url("../lib/TTF/PingFang Regular.ttf");
+	src: url("../fonts/PingFang Regular.ttf");
 }
 
 * {
@@ -22,6 +22,7 @@ body::-webkit-scrollbar {
 	height: 40px;
 	position: absolute;
 	top: 0;
+	padding: 0 20px;
 	text-decoration: none;
 	color: #2ECC71;
 	font-family: "PFR";

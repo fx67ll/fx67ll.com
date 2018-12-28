@@ -1,42 +1,15 @@
 .L-to-code {
 	top: 0;
-	left: 0;
-	width: 90px;
-}
-
-.L-to-bvb {
-	top: 40px;
-	left: 0;
-	width: 90px;
-}
-
-.L-to-film {
-	top: 80px;
-	left: 0;
-	width: 90px;
-}
-
-.L-to-photo {
-	top: 120px;
-	left: 0;
-	width: 90px;
-}
-
-.L-to-file {
-	top: 160px;
-	left: 0;
-	width: 90px;
+	right: 0;
 }
 
 .L-to-bclock {
 	right: 0;
-	width: 150px;
 }
 
 .L-to-d3js {
 	top: 40px;
 	right: 0;
-	width: 150px;
 }
 
 .word {
