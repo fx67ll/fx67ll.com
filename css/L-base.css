@@ -1,0 +1,42 @@
+/* PingFang SC Regular */
+@font-face {
+	font-family: "PFR";
+	src: url("../fonts/PingFang Regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 1rem = 10px */
+html{
+    font-size: 10px;
+}
+
+body,
+html {
+	background-color: rgba(236, 240, 241, 1);
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.L-to-a {
+	height: 4rem;
+	position: absolute;
+	top: 0;
+	padding: 0 2rem;
+	text-decoration: none;
+	color: #2ECC71;
+	font-family: "PFR";
+	font-size: 2.2rem;
+	line-height: 4rem;
+	text-align: center;
+}
+
+.L-to-index {
+	left: 0;
+	width: 10rem;
+}
