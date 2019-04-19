@@ -1,26 +1,19 @@
-.L-to-code {
-	border: 1px solid red;
+.pt-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
 	top: 0;
+	bottom: 0;
+	left: 0;
 	right: 0;
-}
-
-.L-to-bclock {
-	right: 0;
-}
-
-.L-to-d3js {
-	top: 4rem;
-	right: 0;
-}
-
-.L-mid-box{
-	margin: 0 atuo;
-	margin-top: 20%;
 }
 
 .L-mid-faith {
+	/* 为了追求视觉上的的舒服我稍微调整了一下位置，就酱儿 */
+	position: relative;
+	bottom: 8rem;
 	font-family: "PFR";
 	font-size: 2.8rem;
 	color: #2ECC71;
-	text-align: center;
 }
