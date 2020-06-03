@@ -1,0 +1,26 @@
+{
+  "name": "fx67ll.com",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "font-spider": "^1.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fx67ll/fx67ll.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fx67ll/fx67ll.com/issues"
+  },
+  "homepage": "https://github.com/fx67ll/fx67ll.com#readme"
+}
