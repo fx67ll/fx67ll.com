@@ -45,7 +45,7 @@
 				font-size: 2.8rem;
 				color: #2ECC71;
 			}
-			
+
 			@media screen and (max-width: 1280px) {
 				.pt-page {
 					text-align: center;
@@ -61,13 +61,14 @@
 	<body>
 		<div id="pt-main" class="pt-perspective">
 			<div class="pt-page">
-				<div class="L-mid-faith">种一棵树最好的时间是十年前，其次是现在</div>
+				<div id="fx67ll-tree" class="L-mid-faith">种一棵树最好的时间是十年前，其次是现在</div>
 			</div>
 			<div class="pt-page">
-				<div class="L-mid-faith">If today were the last day of my life, would I want to do what I am about to do today?</div>
+				<div id="fx67ll-steve" class="L-mid-faith">If today were the last day of my life, would I want to do
+					what I am about to do today?</div>
 			</div>
 			<div class="pt-page">
-				<div class="L-mid-faith">无限大な梦の後の何も无い世の中じゃ</div>
+				<div id="fx67ll-dream" class="L-mid-faith">无限大な梦の後の何も无い世の中じゃ</div>
 			</div>
 			<!-- <div class="pt-page">
 				<div class="L-mid-faith">在这小小的宇宙里遇见你</div>
@@ -84,6 +85,15 @@
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/pagetransitions.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			$('#fx67ll-tree').click(function() {
+				window.open('http://fx67ll.xyz');
+			});
+			$('#fx67ll-steve').click(function() {
+				console.log('Steve Jobs !!!');
+			});
+			$('#fx67ll-dream').click(function() {
+				console.log('Never Give Up !!!');
+			});
 			console.log(
 				"####### #     #  #####  ####### #       #     \n#        #   #  #     # #    #  #       #       \n#         # #   #           #   #       #       \n#####      #    ######     #    #       #       \n#         # #   #     #   #     #       #\n#        #   #  #     #   #     #       #\n#       #     #  #####    #     ####### ####### "
 			);
