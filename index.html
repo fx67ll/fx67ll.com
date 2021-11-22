@@ -59,13 +59,73 @@
 					width: 300px;
 				}
 			}
+
+			#tip-bubble {
+				display: block;
+				width: 140px;
+				height: 28px;
+				line-height: 28px;
+				text-align: center;
+				background-color: #2ECC71;
+				color: #ffffff;
+				position: relative;
+				top: -10px;
+				right: -87%;
+				border-radius: 10px;
+				font-size: 12px;
+				animation: jumpTip 0.4s linear infinite alternate;
+			}
+
+			#tip-bubble:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: -10px;
+				width: 0;
+				height: 0;
+				border-top: 10px solid transparent;
+				border-left: 12px solid #2ECC71;
+				border-bottom: 10px solid transparent;
+			}
+
+
+			@keyframes jumpTip {
+				from {
+					top: -20px;
+				}
+
+				to {
+					top: -10px;
+				}
+			}
+
+			@keyframes goDie {
+				from {
+					opacity: 1;
+					top: -20px;
+				}
+
+				to {
+					opacity: 0;
+					top: -10px;
+				}
+			}
+
+			@media screen and (max-width: 500px) {
+				#tip-bubble {
+					right: -65%;
+				}
+			}
 		</style>
 	</head>
 
 	<body>
 		<div id="pt-main" class="pt-perspective">
 			<div class="pt-page">
-				<div class="L-mid-faith fx67ll-xyz">生活是不完美的，成长就是认识并接受这件事</div>
+				<div id="fx67ll-first" class="L-mid-faith fx67ll-xyz">
+					<span id="tip-bubble">点击有惊喜 (๑•̀ㅂ•́)و✧</span>
+					生活是不完美的，成长就是认识并接受这件事
+				</div>
 			</div>
 			<div class="pt-page">
 				<div id="fx67ll-yu" class="L-mid-faith">🙂😃😆😍😔😵‍💫🤡😥😢😭💀🥴</div>
@@ -176,16 +236,25 @@
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/pagetransitions.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$('.fx67ll-xyz').click(function(){
+			// tip disappear animation
+			setTimeout(function() {
+				document.getElementById("tip-bubble").style.animation = "goDie 0.6s linear 1";
+			}, 4800);
+			setTimeout(function() {
+				document.getElementById("tip-bubble").style.opacity = "0";
+			}, 5400);
+
+			// fx67ll
+			$('.fx67ll-xyz').click(function() {
 				window.open('https://fx67ll.xyz');
 			});
-		
+
 			// fx67ll
 			// $('#fx67ll-tree').click(function() {
 			// 	window.open('https://fx67ll.xyz');
 			// });
 			// $('#fx67ll-steve').click(function() {
-				// window.open('https://www.apple.com');
+			// window.open('https://www.apple.com');
 			// 	console.log('Steve Jobs !!!');
 			// });
 			// $('#fx67ll-dream').click(function() {
@@ -196,7 +265,7 @@
 			// $('#fx67ll-pc426').click(function() {
 			// 	window.open('https://www.pc426.com');
 			// });
-			
+
 			// yu
 			$('#fx67ll-yu').click(function() {
 				window.open('http://panyu.love');
