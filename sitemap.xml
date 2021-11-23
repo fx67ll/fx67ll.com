@@ -5,45 +5,45 @@
   xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84
                       http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
  <url>
-  <loc>https://www.fx67ll.com/</loc>
+  <loc>http://www.fx67ll.com/</loc>
   <priority>1.0000</priority>
  </url>
  <url>
-  <loc>https://www.fx67ll.com/css/L-base.css</loc>
+  <loc>http://www.fx67ll.com/css/L-base.css</loc>
   <priority>0.2174</priority>
  </url>
  <url>
-  <loc>https://www.fx67ll.com/css/animations.css</loc>
+  <loc>http://www.fx67ll.com/css/animations.css</loc>
   <priority>0.2174</priority>
  </url>
  <url>
-  <loc>https://www.fx67ll.com/css/component.css</loc>
+  <loc>http://www.fx67ll.com/css/component.css</loc>
   <priority>0.2174</priority>
  </url>
  <url>
-  <loc>https://www.fx67ll.com/fonts/PingFang+Regular.ttf</loc>
+  <loc>http://www.fx67ll.com/fonts/PingFang+Regular.ttf</loc>
   <priority>0.1739</priority>
  </url>
  <url>
-  <loc>https://www.fx67ll.com/img/</loc>
+  <loc>http://www.fx67ll.com/img/</loc>
   <lastmod>2019-04-19T03:38:06Z</lastmod>
   <priority>0.0435</priority>
  </url>
  <url>
-  <loc>https://www.fx67ll.com/img/favicon.ico</loc>
+  <loc>http://www.fx67ll.com/img/favicon.ico</loc>
   <lastmod>2019-04-19T03:36:46Z</lastmod>
   <priority>0.3913</priority>
  </url>
  <url>
-  <loc>https://www.fx67ll.com/js/jquery.min.js</loc>
+  <loc>http://www.fx67ll.com/js/jquery.min.js</loc>
   <priority>0.2609</priority>
  </url>
  <url>
-  <loc>https://www.fx67ll.com/js/modernizr.custom.js</loc>
+  <loc>http://www.fx67ll.com/js/modernizr.custom.js</loc>
   <priority>0.2609</priority>
  </url>
  <url>
-  <loc>https://www.fx67ll.com/js/pagetransitions.js</loc>
+  <loc>http://www.fx67ll.com/js/pagetransitions.js</loc>
   <priority>0.2609</priority>
  </url>
 </urlset>
