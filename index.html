@@ -48,7 +48,6 @@
 				color: #2ECC71;
 				text-align: center;
 				cursor: pointer;
-				user-select: none; 
 			}
 
 			@media screen and (max-width: 1280px) {
@@ -126,7 +125,7 @@
 			<!-- <div class="pt-page">
 				<div class="L-mid-faith">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</div>
 			</div> -->
-			
+
 			<!-- 2022 New Year Version -->
 			<div class="pt-page">
 				<div class="L-mid-faith">
@@ -149,11 +148,11 @@
 				</div>
 			</div>
 			<div class="pt-page">
-				<div class="L-mid-faith fx67ll-nan">
+				<div id="fx67ll-nan" class="L-mid-faith">
 					Nan 🥰
 				</div>
 			</div>
-			
+
 			<!-- Old Version -->
 			<!-- <div class="pt-page">
 				<div class="L-mid-faith fx67ll-xyz">
@@ -171,7 +170,7 @@
 			<div class="pt-page">
 				<div id="fx67ll-dream" class="L-mid-faith fx67ll-xyz">无限大な梦の後の何も无い世の中じゃ🎁</div>
 			</div> -->
-			
+
 			<!-- Old Version / Christmas Theme -->
 			<!-- <div class="pt-page">
 				<div class="L-mid-faith fx67ll-xyz">
@@ -189,7 +188,7 @@
 			<div class="pt-page">
 				<div id="fx67ll-dream" class="L-mid-faith fx67ll-xyz">无限大な梦の後の何も无い世の中じゃ🎁</div>
 			</div> -->
-			
+
 			<!-- be yourself and dont angry -->
 			<!-- <div class="pt-page">
 				<div class="L-mid-faith fx67ll-xyz">不以物喜 不以己悲</div>
@@ -197,7 +196,7 @@
 			<div class="pt-page">
 				<div class="L-mid-faith fx67ll-xyz">我现在不和人争吵了，因为我开始意识到每个人只能在他的认知水准基础上去思考，如果以后有人告诉我 2+2 等于 10，我会说你真厉害，你完全正确！</div>
 			</div> -->
-			
+
 			<!-- 2021 Winter Version -->
 			<!-- <div class="pt-page">
 				<div class="L-mid-faith fx67ll-xyz">2021冬日限定 :)</div>
@@ -257,7 +256,7 @@
 			<div class="pt-page">
 				<div class="L-mid-faith fx67ll-xyz">世界上最稳定的关系是没有关系</div>
 			</div>-->
-			
+
 			<!-- Future Life -->
 			<!-- <div class="pt-page">
 				<div class="L-mid-faith fx67ll-xyz">山有木兮卿有意，昨夜星辰恰似你</div>
@@ -289,31 +288,37 @@
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/pagetransitions.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			// nan
+			$('#fx67ll-nan').click(function() {
+				// window.open('http://guonan.love');
+				console.log("继续立flag咯！！！");
+			});
+
 			// tip disappear animation
-			setTimeout(function() {
-				document.getElementById("tip-bubble").style.animation = "goDie 0.6s linear 1";
-			}, 4800);
-			setTimeout(function() {
-				document.getElementById("tip-bubble").style.opacity = "0";
-			}, 5400);
+			// setTimeout(function() {
+			// 	document.getElementById("tip-bubble").style.animation = "goDie 0.6s linear 1";
+			// }, 4800);
+			// setTimeout(function() {
+			// 	document.getElementById("tip-bubble").style.opacity = "0";
+			// }, 5400);
+
+			// xyz
+			// $('.fx67ll-xyz').click(function() {
+			// 	window.open('https://fx67ll.xyz');
+			// });
 
 			// fx67ll
-			$('.fx67ll-xyz').click(function() {
-				window.open('https://fx67ll.xyz');
-			});
+			// $('#fx67ll-tree').click(function() {
+			// 	window.open('https://fx67ll.xyz');
+			// });
+			// $('#fx67ll-steve').click(function() {
+			// 	window.open('https://www.apple.com.cn');
+			// 	console.log('Steve Jobs !!!');
+			// });
+			// $('#fx67ll-dream').click(function() {
+			// 	console.log('Never Give Up !!!');
+			// });
 
-			// fx67ll
-			$('#fx67ll-tree').click(function() {
-				window.open('https://fx67ll.xyz');
-			});
-			$('#fx67ll-steve').click(function() {
-			window.open('https://www.apple.com.cn');
-				console.log('Steve Jobs !!!');
-			});
-			$('#fx67ll-dream').click(function() {
-				console.log('Never Give Up !!!');
-			});
-			
 			// 426
 			// $('#fx67ll-pc426').click(function() {
 			// 	window.open('https://www.pc426.com');
@@ -324,12 +329,6 @@
 			// 	window.open('http://panyu.love');
 			// 	console.log("以后要少立Flag了哦！！！");
 			// });
-			
-			// nan
-			 $('#fx67ll-nan').click(function() {
-			 	// window.open('http://guonan.love');
-			 	console.log("继续立flag咯！！！");
-			 });
 
 			// egg
 			console.log(
