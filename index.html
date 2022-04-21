@@ -161,6 +161,7 @@
 				<div class="L-mid-faith ">
 					<!-- java要再过一遍基础语法，重点再看一下数据结构，然后过一遍Springboot，scala语法在idea上跑一遍 -->
 					熟悉Scala、Java、JavaScript语言，并搭建过个人主页（https://fx67ll.com）和博客网站（https://fx67ll.xyz）⏳⏳
+					<!-- 参与公司数据中台项目的架构这个后续肯定要写，但是写了怎么说要重点考虑一下 -->
 				</div>
 			</div>
 			<div class="pt-page">
@@ -171,14 +172,16 @@
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith ">
-					<!-- 做题，hbase和redis的基本命令总结 -->
+					<!-- 做题，Hbase和Redis的基本命令总结 -->
 					掌握SQL语句，能够对数据进行查询、分析和清洗，熟练使用关系型数据库MySQL，熟悉使用Hbase、MongoDB、Redis等非关系型数据库 ⏳⏳⏳  
 				</div>
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith ">
 					掌握hadoop生态圈，理解MapReduce的工作机制，掌握Yarn任务的调度流程，熟练使用HDFS分布式文件存储系统 ⏳<br>
-					熟悉大数据开发的各种常用技术组件：Spark、Hive、HBase、MySQL、Sqoop、Flume、Kafka、Redis、Zookeeper、Azkaban、Atlas ⏳
+					熟悉大数据开发的各种常用技术组件：Spark、Hive、HBase、MySQL、Sqoop、Flume、Kafka、Redis、Zookeeper、Azkaban、Atlas ⏳<br>
+					<!-- 需要罗列一下能够完成javaapi编程的技术，每个最好都做验证操作，考虑单独列到每个技术点上 -->
+					熟悉使用大数据生态圈中各类技术的进行Java API编程 ⏳
 				</div>
 			</div>
 			<div class="pt-page">
@@ -189,16 +192,14 @@
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith ">
-					<!-- 需要罗列一下能够完成javaapi编程的技术，每个最好都做验证操作，考虑单独列到每个技术点上 -->
-					熟悉使用大数据生态圈中各类技术的进行Java API编程 ⏳
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith ">
 					熟练掌握Hive，使用HQL进行数据查询、清洗、聚类、提取特征集等操作，对Hive在工作中的优化有一定了解 ⏳⏳⏳</div>
 			</div>
 			<div class="pt-page">
-				<div class="L-mid-faith ">Hbase ⏳⏳⏳</div>
+				<div class="L-mid-faith ">
+					<!-- 这个描述有点牛逼需要好好准备一下 -->
+					熟悉Hbase底层存储原理，能够使用 Java Api 对 Hbase 进行数据插入和查询 ⏳⏳
+					对rowkey的优化有一定了解，能够实现数据的毫秒级查询 ⏳⏳
+				</div>
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith ">
@@ -207,7 +208,7 @@
 				</div>
 				<!-- 通过kafka的生产者对收集到的日志写入kafka一级topic中，通过kafka stream消费一级topic中的日志信息，对日志进行校验，
 				比如对缺失和IP黑名单的日志信息进行过滤，对延迟日志进行过滤，并写入kafka的二级topic，通过spark stream批量消费二级topic，
-				运用窗口函数对启动日志和事件日志中对商品列表，商品详情，商品点击，消息通知，广告，错误等指标进行实时汇总处理，并将数据写入redis中，
+				运用窗口函数对启动日志和事件日志中对商品列表，商品详情，商品点击，消息通知，广告，错误等指标进行实时汇总处理，并将数据写入Redis中，
 				为公司的可视化大屏监控系统提供数据支撑 -->
 			</div>
 			<div class="pt-page">
@@ -262,7 +263,7 @@
 				对用户话单数据进行清洗，转化，对话单进行按天聚合汇总，并由此生成天/周/月的累加表
 			4. 数据仓库ADS：
 				将汇总的话单数据导入标签系统，维护T+1的数据，为用户营销提供标签数据服务
-				将汇总的话单数据导入hbase，为报表团队提供数据服务  -->
+				将汇总的话单数据导入Hbase，为报表团队提供数据服务  -->
 			<div class="pt-page">
 				<div class="L-mid-faith ">Flink</div>
 			</div>
