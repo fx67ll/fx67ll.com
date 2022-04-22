@@ -3,7 +3,6 @@ $("#fx67ll-typed-box").resize(function() {
 	let boxh = $("#fx67ll-typed-box").height();
 	let screenh = $(document.body).height();
 	if (boxh > screenh) {
-		console.log(boxh - screenh);
 		$("#fx67ll-typed-box").offset({
 			top: -(boxh - screenh) - 100
 		});
@@ -11,7 +10,7 @@ $("#fx67ll-typed-box").resize(function() {
 });
 
 // Type animation. This is a call back hell!
-const fx67llTypeSpeed = 30;
+const fx67llTypeSpeed = 26;
 const fx67llStartDelay = 200;
 const fx67llNextTimeSpace = 1000;
 let typed = new Typed('#fx67ll-typed', {
@@ -104,6 +103,24 @@ let typed = new Typed('#fx67ll-typed', {
 																											console
 																												.log(
 																													'Type animation is finished ~~~'
+																												);
+																											setTimeout
+																												(function() {
+																														$("#fx67ll-typed-box")
+																															.offset({
+																																top: -
+																																	(
+																																	 $("#fx67ll-typed-box")
+																																	 	.height()
+																																	 / 2 - 300
+																																		)
+																															});
+																														$("#fx67ll-typed-box")
+																															.html(
+																																"Welcome <strong><em>https://fx67ll.com</em></strong> ~"
+																															);
+																													},
+																													9798
 																												);
 																										},
 																									}
