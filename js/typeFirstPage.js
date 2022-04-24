@@ -110,17 +110,19 @@ let typed = new Typed('#fx67ll-typed', {
 																															.offset({
 																																top: -
 																																	(
-																																	 $("#fx67ll-typed-box")
-																																	 	.height()
-																																	 / 2 - 300
-																																		)
+																																		$(
+																																			"#fx67ll-typed-box")
+																																		.height() /
+																																		2 -
+																																		300
+																																	)
 																															});
 																														$("#fx67ll-typed-box")
 																															.html(
 																																"Welcome <strong><em>https://fx67ll.com</em></strong> ~"
 																															);
 																													},
-																													9798
+																													4489
 																												);
 																										},
 																									}
