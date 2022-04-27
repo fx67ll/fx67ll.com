@@ -74,6 +74,10 @@
 				margin-bottom: 2.6vw;
 			}
 
+			.fx67ll-resume-text-short {
+				text-indent: 0;
+			}
+
 			.fx67ll-resume-text-long {
 				text-indent: -3.1vw;
 			}
@@ -134,6 +138,28 @@
 					right: -65%;
 				}
 			}
+
+			.fx67ll-bubble-url {
+				font-size: 2.3vw;
+				margin: 0 20px;
+				top: 0;
+				position: relative;
+				animation: jumpUrl 0.4s linear infinite alternate;
+			}
+
+			.fx67ll-bubble-url:hover {
+				color: #aaaa7f;
+			}
+
+			@keyframes jumpUrl {
+				from {
+					top: -10px;
+				}
+
+				to {
+					top: 0;
+				}
+			}
 		</style>
 	</head>
 
@@ -141,8 +167,8 @@
 		<div id="pt-main" class="pt-perspective">
 			<!-- Scanner List -->
 			<!-- PS: 使用 font-spider index.html 命令扫描的时候请放开 pt-page & L-mid-faith 两个class -->
-			<!-- <div class="pt-page">
-				<div class="L-mid-faith"> -->
+			<div class="pt-page">
+				<div class="L-mid-faith">
 			<div style="display: none;">
 				0123456789
 				ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -170,8 +196,8 @@
 				在本站点浏览完成之后您还可以访问的个人博客站点以了解更多关于我的工作项目经验以及各类技术博文
 				首页的废话即将要说完了您可以通过点击页面中的任意位置来查看下一页哦
 				点击查看下一页吧
-				<!-- </div>
-				</div> -->
+				</div>
+				</div>
 			</div>
 
 			<!-- Get Job Version 0.1.0 -->
@@ -192,13 +218,11 @@
 					<span class="fx67ll-resume-text">1. 熟悉
 						<strong><em>Scala</em></strong>、<strong><em>Java</em></strong>、<strong><em>JavaScript</em></strong>
 						语言，并搭建过个人主页<strong><em>（https://fx67ll.com）</em></strong>和博客网站<strong
-							class="fx67ll-xyz"><em>（https://fx67ll.xyz）</em></strong>
-						⏳️🌡️️️</span>
+							class="fx67ll-xyz"><em>（https://fx67ll.xyz）</em></strong> ⏳️🌡️️️</span>
 
-					<!-- 部署一个若依项目，并使用SpringBoot和MyBatis完成在基础项目上扩展一套CRUD的接口 -->
 					<span class="fx67ll-resume-text">2. 参与公司数据中台的架构与开发，使用 <strong><em>SpringBoot</em></strong> 和
 						<strong><em>MyBatis</em></strong> 完成相关业务逻辑开发，并使用 <strong><em>Vuejs</em></strong>
-						为可视化监控大屏提供相关组件开发 ⏳🌡️️️</span>
+						为可视化监控大屏提供相关组件开发 ⌛🌡️🎉️️️</span>
 
 					<!-- 考虑下编写自动化的脚本常用的linux命令，注意面试官面试的时候会问到的内容 -->
 					<span class="fx67ll-resume-text">3. 熟悉 Linux 环境和命令，能够在 Linux 系统下自编 Shell 脚本搭建开发环境 ⏳🧱</span>️
@@ -206,73 +230,58 @@
 					<!-- 做题做题做题，Hbase和Redis的常用命令总结并操作一遍 -->
 					<span class="fx67ll-resume-text">4. 熟练使用 SQL 语句进行查询、分析和清洗，熟悉 <strong><em>MySQL</em></strong>、
 						<strong><em>Hbase</em></strong>、<strong><em>Redis</em></strong>、<strong><em>MongoDB</em></strong>
-						等各型数据库，
-						并熟练使用数据仓库工具 <strong><em>Hive</em></strong> ⏳🌡️️️</span>
+						等各型数据库，并熟练使用数据仓库工具 <strong><em>Hive</em></strong> ⏳🌡️️️</span>
 				</div>
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith fx67ll-resume">
-					<!-- 这个罗列后期考虑下是否需要，并且部分技术组件也并未罗列 -->
-					<!-- <span class="fx67ll-resume-text">5.
-						熟悉大数据开发业务中各种常用技术组件：<strong><em>Hadoop</em></strong>、<strong><em>MapReduce</em></strong>、
-						<strong><em>HDFS</em></strong>、<strong><em>Yarn</em></strong>、<strong><em>Spark</em></strong>、
-						<strong><em>Hive</em></strong>、<strong><em>HBase</em></strong>、<strong><em>Kafka</em></strong>、
-						<strong><em>Redis</em></strong>、<strong><em>Sqoop</em></strong>、<strong><em>Flume</em></strong>、
-						<strong><em>Azkaban</em></strong>、<strong><em>Atlas</em></strong>、<strong><em>Zookeeper</em></strong>
-						⏳🧱</span> -->
-					<span class="fx67ll-resume-text">5.
-						熟悉大数据开发业务中各种常用技术组件：Hadoop、MapReduce、HDFS、Yarn、Spark、Hive、HBase、Kafka、Redis、Sqoop、Flume、Azkaban、Atlas、Zookeeper
-						⏳🧱</span>
-
-					<!-- 需要罗列一下能够完成Java API编程的技术，每个最好都做验证操作，考虑单独列到每个技术点上 -->
-					<span class="fx67ll-resume-text">6. 熟悉使用大数据生态圈中各类技术的进行 Java API 编程 ⏳🧱</span>
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith fx67ll-resume">
-					<!-- 这里重点背面试题，除非过于老套的项目否则使用的几率不大 -->
-					<span class="fx67ll-resume-text">7. 掌握 <strong><em>Hadoop</em></strong> 生态圈，理解 MapReduce 的工作机制，熟悉
-						HDFS 分布式文件存储系统，掌 Yarn 任务的调度流程 ⏳🧱</span>
-
-					<!-- 非常非常重要，相当于VueReact之于JQuery -->
-					<span class="fx67ll-resume-text">8. 掌握 <strong><em>Spark</em></strong> 任务的执行流程，理解 Spark 的工作机制，熟悉
+					<!-- 非常非常重要，相当于VueReact之于JQuery，这里看完教程之后要改变一下描述 -->
+					<span class="fx67ll-resume-text">5. 掌握 <strong><em>Spark</em></strong> 任务的执行流程，理解 Spark 的工作机制，熟悉
 						Spark 常用的算子，能够使用 Spark SQL 对数据进行探查，处理和统计 ⏳🌡️️</span>️️️
 
 					<!-- 背面试题和做模拟练习题 -->
-					<span class="fx67ll-resume-text">9. 熟练掌握 <strong><em>Hive</em></strong>，熟悉使用 HQL
+					<span class="fx67ll-resume-text">6. 熟练使用 <strong><em>Hive</em></strong>，熟悉使用 HQL
 						进行数据查询、清洗、聚类、提取特征集等操作，对 Hive 在工作中的优化有一定了解 ⏳🌡️️</span>️️️
 
 					<!-- 这个描述有点牛逼需要好好准备一下，貌似不怎么问面试题但是关于rowkey设计要重点准备一下 -->
-					<span class="fx67ll-resume-text fx67ll-resume-text-long">10. 熟悉 <strong><em>Hbase</em></strong>
+					<span class="fx67ll-resume-text ">7. 熟悉 <strong><em>Hbase</em></strong>
 						底层存储原理，能够使用 Java 对 Hbase 进行数据插入和查询，对 rowkey 的优化有一定了解，能够实现数据的毫秒级查询 ⏳🌡️️</span>
+
+					<span class="fx67ll-resume-text">8. 了解大数据开发业务中各种常用技术组件并配合Java Api编程：
+						Hadoop、MapReduce、HDFS、Yarn、Spark、Hive、HBase、Kafka、Redis、Sqoop、Flume、Azkaban、Atlas、Zookeeper
+						⏳🧱</span>
 				</div>
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith fx67ll-resume">
-					<span class="fx67ll-resume-text fx67ll-resume-text-long">11. 熟悉 <strong><em>Kafka</em></strong>
+					<span class="fx67ll-resume-text">9. 熟悉 <strong><em>Kafka</em></strong>
 						的工作机制，能够搭建 Kafka 集群，熟悉isr、ick等策略，使用 Java 进行 Producer 和 看Consumer 开发，
 						使用事务系统和 Stream 进行数据变换，利用 Kafka + Spark Streaming 进行数据的流式处理 ⏳🌡️️</span>
 					<!-- 通过Kafka的生产者对收集到的日志写入Kafka一级topic中，通过Kafka stream消费一级topic中的日志信息，对日志进行校验，
-					比如对缺失和IP黑名单的日志信息进行过滤，对延迟日志进行过滤，并写入Kafka的二级topic，通过spark stream批量消费二级topic，
-					运用窗口函数对启动日志和事件日志中对商品列表，商品详情，商品点击，消息通知，广告，错误等指标进行实时汇总处理，并将数据写入Redis中，
-					为公司的可视化大屏监控系统提供数据支撑 -->
+								比如对缺失和IP黑名单的日志信息进行过滤，对延迟日志进行过滤，并写入Kafka的二级topic，通过spark stream批量消费二级topic，
+								运用窗口函数对启动日志和事件日志中对商品列表，商品详情，商品点击，消息通知，广告，错误等指标进行实时汇总处理，并将数据写入Redis中，
+								为公司的可视化大屏监控系统提供数据支撑 -->
 
-					<span class="fx67ll-resume-text fx67ll-resume-text-long">12. 能够使用 <strong><em>Sqoop</em></strong>
+					<span class="fx67ll-resume-text fx67ll-resume-text-long">10. 能够使用 <strong><em>Sqoop</em></strong>
 						完成关系型数据库与非关系型数据库之间的数据迁移与传输 ⏳🧱</span>
 
-					<span class="fx67ll-resume-text fx67ll-resume-text-long">13. 了解 <strong><em>Flume</em></strong>
+					<span class="fx67ll-resume-text fx67ll-resume-text-long">11. 了解 <strong><em>Flume</em></strong>
 						框架的原理，能够完成 Flume Agent 配置文件编写，实现监听、上传等功能 ⏳🧱</span>
 
-					<span class="fx67ll-resume-text fx67ll-resume-text-long">14. 能够使用 <strong><em>Azkaban</em></strong>
+					<span class="fx67ll-resume-text fx67ll-resume-text-long">12. 能够使用 <strong><em>Azkaban</em></strong>
 						完成工作脚本的自动化流程调度，并了解
 						<strong><em>Oozies</em></strong>，<strong><em>DolphinSchedulers</em></strong> 的使用
 						⌛🧱🎉</span>
 
-					<span class="fx67ll-resume-text fx67ll-resume-text-long">15. 能够使用 <strong><em>Atlas</em></strong>
+					<span class="fx67ll-resume-text fx67ll-resume-text-long">13. 能够使用 <strong><em>Atlas</em></strong>
 						进行元数据管理和数据血缘治理，参与公司对于权限管理以及部分核心模块集成到数据中台的二次开发
 						⌛🧱🎉</span>
+				</div>
+			</div>
+			<div class="pt-page">
+				<div class="L-mid-faith fx67ll-resume">
 
-					<span class="fx67ll-resume-text fx67ll-resume-text-long">16.
+					<span class="fx67ll-resume-text fx67ll-resume-text-short">
 						熟练掌握数仓建模理论，能够独立完成数仓建模的架构，熟悉数仓搭建，多层架构，
 						理解维度表，事实表，星型模型，雪花模型和星座模型 ⏳🌡️️</span>
 					<!--
@@ -298,21 +307,17 @@
 					4. 数据仓库ADS：
 						将汇总的话单数据导入标签系统，维护T+1的数据，为用户营销提供标签数据服务
 						将汇总的话单数据导入Hbase，为报表团队提供数据服务  -->
+
+					<span class="fx67ll-resume-text fx67ll-resume-text-short fx67ll-xyz ">
+						️看到这里，我的技能展示也就完毕了，您可以点击跳转访问 <strong
+							class="fx67ll-bubble-url"><em>https://fx67ll.xyz</em></strong>
+						以了解更多关于我的工作项目内容、技术经验总结以及各类技术博文，Code is my life ~ 🖱️📌📋️️</span>
+
+					<!-- 下面这些内容考虑一下要不要加上：
+					掌握 Hadoop 生态圈，理解 MapReduce 的工作机制，熟悉 HDFS 分布式文件存储系统，掌 Yarn 任务的调度流程 ⏳🧱
+					了解 Zookeeper 分布式应用程序协调服务，掌握 Zookeeper 选举原理 ⏳🧱 -->
 				</div>
 			</div>
-
-
-			<div class="pt-page">
-				<div class="L-mid-faith fx67ll-xyz">点击跳转访问 <strong><em>https://fx67ll.xyz</em></strong>
-					以查看更多关于我的工作项目经验以及各类技术博文</div>
-			</div>
-			<!-- 要不要加上考虑一下 -->
-			<!-- <div class="pt-page">
-				<div class="L-mid-faith ">
-					了解 Zookeeper 分布式应用程序协调服务，掌握 Zookeeper 选举原理 ⏳🧱<br>
-					Flink、Kylin、Impala、ClickHouse、Canel、Maxwell、etc...  ⏳🧱
-				</div>
-			</div> -->
 
 
 			<!-- After Get Job Version -->
