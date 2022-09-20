@@ -15,12 +15,14 @@ const fx67llStartDelay = 200;
 const fx67llNextTimeSpace = 1000;
 let fx67llStringList = [
 	"在这里您可以了解到工作三年以来 fx67ll 所掌握的各种技术技能点 🧵🧶🕹️",
-	"主要包括 fx67ll 在大数据工作领域所掌握的各类技术组件 Hadoop、MapReduce、HDFS、Yarn、Zookeeper、Spark、Hive、Impala、HBase、Kafka、Redis、Flink、Sqoop、Flume、Azkaban、DolphinSchedulers、Atlas 🔨🔧⚙️",
-	"以及包括 fx67ll 在工作生活之余自己所研究的web前后端开发技术框架 Vue、SpringBoot、MyBatis、Nodejs、MongoDB 🧱⛱️🎊",
+	"主要包括 fx67ll 在前端开发工作领域所掌握的各类技术框架组件 Html5、Css3、JavaScript、TypeScript、Sass、Less、Vue/React全家桶、ElementUI、AntDesign、Echarts、D3js、Cesium、uni-app、Threejs、乾坤前端微应用加载器 🔨🔧⚙️",
+	"以及包括 fx67ll 在工作生活之余自己所研究的web后端以及数据库开发技术框架Java、SpringBoot、MySQL、Redis、Nodejs、Express、MongoDB、Linux、Nginx、Jeckins 🧱⛱️🎊",
 	"在本站点浏览完成之后，您还可以访问 fx67ll的个人博客站点 https://fx67ll.xyz，以了解更多关于我的工作项目经验以及各类技术博文 💻📱🧐️",
 	"首页的废话即将要说完了，您可以通过点击页面中的任意位置来查看下一页哦 🖱️🖱️🖱️",
 	"点击查看下一页吧️ 🎉🎉🎉"
 ];
+
+// 这里使用 Promise 重新编写异步操作
 let typed = new Typed('#fx67ll-typed', {
 	stringsElement: '#fx67ll-typed-strings',
 	typeSpeed: fx67llTypeSpeed,
@@ -58,7 +60,9 @@ let typed = new Typed('#fx67ll-typed', {
 										new Typed(
 											'#fx67ll-typed-third', {
 												strings: [
-													fx67llStringList[2]
+													fx67llStringList[
+														2
+														]
 												],
 												startDelay: fx67llStartDelay,
 												typeSpeed: fx67llTypeSpeed,
@@ -78,7 +82,9 @@ let typed = new Typed('#fx67ll-typed', {
 																	new Typed(
 																		'#fx67ll-typed-fourth', {
 																			strings: [
-																				fx67llStringList[3]
+																				fx67llStringList[
+																					3
+																					]
 																			],
 																			startDelay: fx67llStartDelay,
 																			typeSpeed: fx67llTypeSpeed,
@@ -98,8 +104,12 @@ let typed = new Typed('#fx67ll-typed', {
 																								new Typed(
 																									'#fx67ll-typed-fifth', {
 																										strings: [
-																											fx67llStringList[4],
-																											fx67llStringList[5],
+																											fx67llStringList[
+																												4
+																												],
+																											fx67llStringList[
+																												5
+																												],
 																										],
 																										startDelay: fx67llStartDelay,
 																										typeSpeed: fx67llTypeSpeed,
@@ -120,7 +130,7 @@ let typed = new Typed('#fx67ll-typed', {
 																																	(
 																																		$(
 																																			"#fx67ll-typed-box"
-																																			)
+																																		)
 																																		.height() /
 																																		2 -
 																																		300
