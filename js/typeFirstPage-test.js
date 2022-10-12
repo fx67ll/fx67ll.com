@@ -14,11 +14,11 @@ const fx67llTypeSpeed = 26;
 const fx67llStartDelay = 200;
 const fx67llNextTimeSpace = 1000;
 let fx67llStringList = [
-	"在这里您可以了解到工作三年以来 fx67ll 所掌握的各种技术技能点 🧵🧶🕹️",
+	"在这里可以了解到工作这些年 fx67ll 所掌握的各种技术技能点 🧵🧶🕹️",
 	"主要包括 fx67ll 在前端开发工作领域所掌握的各类技术框架组件 Html5、Css3、JavaScript、TypeScript、Sass、Less、Vue/React全家桶、ElementUI、AntDesign、Echarts、D3js、Cesium、uni-app、Threejs、乾坤前端微应用加载器 🔨🔧⚙️",
 	"以及包括 fx67ll 在工作生活之余自己所研究的web后端以及数据库开发技术框架Java、SpringBoot、MySQL、Redis、Nodejs、Express、MongoDB、Linux、Nginx、Jeckins 🧱⛱️🎊",
-	"在本站点浏览完成之后，您还可以访问 fx67ll的个人博客站点 https://fx67ll.xyz，以了解更多关于我的工作项目经验以及各类技术博文 💻📱🧐️",
-	"首页的废话即将要说完了，您可以通过点击页面中的任意位置来查看下一页哦 🖱️🖱️🖱️",
+	"在本站点浏览完成之后，还可以访问 fx67ll的个人博客站点 https://fx67ll.xyz，以了解更多关于我的工作项目经验以及各类技术博文 💻📱🧐️",
+	"首页的废话即将要说完了，通过点击页面中的任意位置来查看下一页吧 🖱️🖱️🖱️",
 	"点击查看下一页吧️ 🎉🎉🎉"
 ];
 
@@ -138,8 +138,8 @@ let typed = new Typed('#fx67ll-typed', {
 																															});
 																														$("#fx67ll-typed-box")
 																															.html(
-																																"Welcome <strong><em>https://fx67ll.com</em></strong> ~"
-																															);
+																																"Welcome <strong><em><a class='fx67ll-a' href='http://guonan.love' target='_blank'>https://fx67ll.com</a></em></strong> ~"
+																															); // 添加隐藏彩蛋，for Love
 																													},
 																													4489
 																												);
