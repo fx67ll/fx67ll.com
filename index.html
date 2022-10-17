@@ -160,10 +160,29 @@
 					top: 0;
 				}
 			}
-			
+
 			.fx67ll-a {
 				text-decoration: none;
 				color: #2ECC71;
+			}
+
+			.fx67ll-footer {
+				width: 100%;
+				padding: 20px 0;
+				text-align: center;
+				position: absolute;
+				bottom: 0;
+				user-select: text;
+				z-index: 99999;
+				color: #bababa;
+			}
+
+			.fx67ll-footer>a {
+				color: #bababa;
+			}
+
+			.fx67ll-footer>a:hover {
+				color: #42b983;
 			}
 		</style>
 	</head>
@@ -296,7 +315,7 @@
 						️看到这里，我的技能展示也就完毕了，可以点击跳转访问 <strong
 							class="fx67ll-bubble-url"><em>https://fx67ll.xyz</em></strong>
 						了解更多关于我的个人开源项目、工作项目内容、技术经验总结以及各类技术博文，Code is my life ~ 🖱️📌📋️️</span>
-						
+
 				</div>
 			</div>
 
@@ -494,6 +513,13 @@
 			</div> -->
 		</div>
 
+		<div class="fx67ll-footer">
+			Designed & Powered by
+			<a :href="https://fx67ll.xyz" target="_blank">fx67ll</a>
+			&#12288; Copyright© 2018- <span id="nowYear">2022</span> &#12288;
+			<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">皖ICP备18017174号</a>
+		</div>
+
 		<!-- Page Transition -->
 		<script src="js/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
@@ -521,14 +547,13 @@
 					window.open('https://fx67ll.xyz');
 				});
 			}
-			
+
 			// For http://three.fx67ll.com
 			if (document.getElementsByClassName("fx67ll-three")) {
 				$('.fx67ll-three').click(function() {
 					window.open('http://three.fx67ll.com');
 				});
 			}
-			
 
 			// For Love
 			if (document.getElementById("fx67ll-nan")) {
@@ -578,6 +603,9 @@
 			);
 			console.log('keep running!');
 			console.log('https://fx67ll.xyz');
+
+			// nowYear
+			document.getElementById("nowYear").innerHTML = new Date().getFullYear();
 		</script>
 	</body>
 </html>
