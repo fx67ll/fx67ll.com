@@ -138,7 +138,7 @@ let typed = new Typed('#fx67ll-typed', {
 																															});
 																														$("#fx67ll-typed-box")
 																															.html(
-																																"Welcome <strong><em><a class='fx67ll-a' href='http://guonan.love' target='_blank'>https://fx67ll.com</a></em></strong> ~"
+																																"Welcome <strong><em><a class='fx67ll-a' href='https://guonan.love' target='_blank'>https://fx67ll.com</a></em></strong> ~"
 																															); // 添加隐藏彩蛋，for Love
 																													},
 																													4489
