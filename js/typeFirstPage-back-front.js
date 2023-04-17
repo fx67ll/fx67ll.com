@@ -15,8 +15,8 @@ const fx67llStartDelay = 200;
 const fx67llNextTimeSpace = 1000;
 let fx67llStringList = [
 	"在这里可以了解到工作这些年 fx67ll 所掌握的各种技术技能点 🧵🧶🕹️",
-	"主要包括 fx67ll 在前端开发工作领域所掌握的各类技术框架组件 Html5、Css3、JavaScript、TypeScript、Sass、Less、Vue/React全家桶、ElementUI、AntDesign、Echarts、D3js、Cesium、uni-app、Threejs、乾坤前端微应用加载器 🔨🔧⚙️",
-	"以及包括 fx67ll 在工作生活之余自己所研究的web后端以及数据库开发技术框架Java、SpringBoot、MySQL、Redis、Nodejs、Express、MongoDB、Linux、Nginx、Jeckins 🧱⛱️🎊",
+	"主要包括 fx67ll 在前端开发工作领域所掌握的各类技术框架组件 Html5、Css3、JavaScript、TypeScript、Sass、Less、Vue/React全家桶、ElementUI、AntDesign、ArcoDesign、Umi、LowCodeEngine、Echarts、D3js、OpenLayers、Cesium、ArcGis、uni-app、Threejs、乾坤前端微应用加载器 🔨🔧⚙️",
+	"以及包括 fx67ll 在工作生活之余自己所研究的web后端以及数据库开发技术框架Java、SpringBoot、MySQL、Redis、Nodejs、Express、Egg、MongoDB、Linux、Nginx、Jeckins 🧱⛱️🎊",
 	"在本站点浏览完成之后，还可以访问 fx67ll的个人博客站点 https://fx67ll.xyz，以了解更多关于我的工作项目经验以及各类技术博文 💻📱🧐️",
 	"首页的废话即将要说完了，通过点击页面中的任意位置来查看下一页吧 🖱️🖱️🖱️",
 	"点击查看下一页吧️ 🎉🎉🎉"
@@ -62,7 +62,7 @@ let typed = new Typed('#fx67ll-typed', {
 												strings: [
 													fx67llStringList[
 														2
-														]
+													]
 												],
 												startDelay: fx67llStartDelay,
 												typeSpeed: fx67llTypeSpeed,
@@ -84,7 +84,7 @@ let typed = new Typed('#fx67ll-typed', {
 																			strings: [
 																				fx67llStringList[
 																					3
-																					]
+																				]
 																			],
 																			startDelay: fx67llStartDelay,
 																			typeSpeed: fx67llTypeSpeed,
@@ -106,10 +106,10 @@ let typed = new Typed('#fx67ll-typed', {
 																										strings: [
 																											fx67llStringList[
 																												4
-																												],
+																											],
 																											fx67llStringList[
 																												5
-																												],
+																											],
 																										],
 																										startDelay: fx67llStartDelay,
 																										typeSpeed: fx67llTypeSpeed,
