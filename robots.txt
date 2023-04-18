@@ -5,4 +5,4 @@ Disallow: /css/
 Disallow: /html/
 Disallow: /js/
 Disallow: /lib/
-Sitemap: http://www.fx67ll.com/sitemap.xml
+Sitemap: https://fx67ll.com/sitemap.xml

@@ -23,19 +23,14 @@
 
   Optional attributes:
     verbose    - an integer from 0 (quiet) to 3 (noisy) for
-                 how much diagnostic output the script gives
-    suppress_search_engine_notify="1"
+                 how much diagnostic output the script gives suppress_search_engine_notify="1"
                - disables notifying search engines about the new map
                  (same as the "testing" command-line argument.)
     default_encoding
                - names a character encoding to use for URLs and
                  file paths.  (Example: "UTF-8")
 -->
-<site
-  base_url="http://www.fx67ll.com"
-  store_into="D:\wwwroot\fx67ll\wwwroot\sitemap.xml"
-  verbose="1"
-  >
+<site base_url="https://fx67ll.com" store_into="d:\wwwroot\fx67ll\wwwroot\sitemap.xml" verbose="1">
 
   <!-- ********************************************************
           INPUTS
@@ -57,14 +52,9 @@
       changefreq - how often content at this URL is usually updated
       priority   - value 0.0 to 1.0 of relative importance in your site
   -->
-<!--
-  <url  href="http://www.example.com/stats?q=name"  />
-  <url
-     href="http://www.example.com/stats?q=age"
-     lastmod="2004-11-14T01:00:00-07:00"
-     changefreq="yearly"
-     priority="0.3"
-  />
+  <!--
+  <url href="http://www.example.com/stats?q=name" />
+  <url href="http://www.example.com/stats?q=age" lastmod="2004-11-14T01:00:00-07:00" changefreq="yearly" priority="0.3" />
 
 -->
 
@@ -79,7 +69,7 @@
       encoding   - encoding of the file if not US-ASCII
   -->
   <!--
-  <urllist  path="example_urllist.txt"  encoding="UTF-8"  />
+  <urllist path="example_urllist.txt" encoding="UTF-8" />
 -->
 
   <!-- ** MODIFY or DELETE **
@@ -94,18 +84,13 @@
       default_file - name of the index or default file for directory URLs
   -->
   <!--
-  <directory  path="/var/www/icons"    url="http://www.example.com/images/" />
-  <directory
-     path="/var/www/docroot"
-     url="http://www.example.com/"
-     default_file="index.html"
-  />
+  <directory path="/var/www/icons" url="http://www.example.com/images/" />
+  <directory path="/var/www/docroot" url="http://www.example.com/" default_file="index.html" />
   -->
-<directory  path="D:\wwwroot\fx67ll\wwwroot\img\"    url="http://www.fx67ll.com/img/" />
 
-<!--
-  <directory  path="D:\wwwroot\fs0757q\wwwroot"    url="http://fs0757q.w127.myhostadmin.net/" />
-  <directory  path="D:\wwwroot\fs0757q\wwwroot\bbs"    url="http://fs0757q.w127.myhostadmin.net/bbs/" />
+  <!--
+  <directory path="D:\wwwroot\fs0757q\wwwroot" url="http://fs0757q.w127.myhostadmin.net/" />
+  <directory path="D:\wwwroot\fs0757q\wwwroot\bbs" url="http://fs0757q.w127.myhostadmin.net/bbs/" />
 -->
 
   <!-- ** MODIFY or DELETE **
@@ -119,13 +104,13 @@
     Optional attributes:
       encoding   - encoding of the file if not US-ASCII
   -->
-   <accesslog  path="E:\w3log\W3SVC10439\u_ex200302.log"       encoding="US-ASCII"  />
- <accesslog  path="E:\w3log\W3SVC10439\u_ex200303.log"       encoding="US-ASCII"  />
- <accesslog  path="E:\w3log\W3SVC10439\u_ex200304.log"       encoding="US-ASCII"  />
- <accesslog  path="E:\w3log\W3SVC10439\u_ex200305.log"       encoding="US-ASCII"  />
+  <accesslog path="E:\w3log\W3SVC10439\u_ex211120.log" encoding="US-ASCII" />
+  <accesslog path="E:\w3log\W3SVC10439\u_ex211121.log" encoding="US-ASCII" />
+  <accesslog path="E:\w3log\W3SVC10439\u_ex211122.log" encoding="US-ASCII" />
+  <accesslog path="E:\w3log\W3SVC10439\u_ex211123.log" encoding="US-ASCII" />
 
   <!--
-	<accesslog  path="D:/w3log/W3SVC10088/ex090601.log"       encoding="US-ASCII"  />
+	<accesslog path="D:/w3log/W3SVC10088/ex090601.log" encoding="US-ASCII" />
   -->
   <!-- ** MODIFY or DELETE **
     "sitemap" nodes tell the script to scan other Sitemap files.  This can
@@ -136,7 +121,7 @@
       path       - path to the file
   -->
   <!--
-  <sitemap    path="/var/www/docroot/subpath/sitemap.xml" />
+  <sitemap path="/var/www/docroot/subpath/sitemap.xml" />
 -->
 
   <!-- ********************************************************
@@ -170,6 +155,6 @@
   ********************************************************* -->
 
   <!-- Exclude URLs that end with a '~'   (IE: emacs backup files)      -->
-  
+
 
 </site>
