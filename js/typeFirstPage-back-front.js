@@ -14,10 +14,12 @@ const fx67llTypeSpeed = 28;
 const fx67llStartDelay = 188;
 const fx67llNextTimeSpace = 888;
 let fx67llStringList = [
-	"在这里可以了解到工作这些年 fx67ll 所掌握的各种技术技能点 🧵🧶🕹️",
-	"主要包括 fx67ll 在前端开发工作领域所掌握的各类技术框架组件 Html5/Css3、JS/TS、Sass/Less、Vue/React全家桶、Ele/Ant/Arco组件库、Umi、Echarts/D3js、uni-app、Threejs、OpenLayers/Cesium/ArcGis、乾坤前端微应用加载器 🔨🔧⚙️",
-	"以及包括 fx67ll 在工作生活之余自己所研究的web后端以及数据库开发技术框架Java、SpringBoot/Cloud、MySQL/Redis/MongoDB、Nodejs/Express、Linux、Nginx、Jeckins 🧱⛱️🎊",
-	// "在本站点浏览完成之后，还可以访问 fx67ll的个人博客站点 https://fx67ll.xyz，以了解更多关于我的工作项目经验以及各类技术博文 💻📱🧐️",
+	"作为浩鲸二年生，fx67ll 将继续致力于提升 DMC 的前端交互使用体验，并努力转型为 DMC 团队里的一名全栈开发工程师 🐳⌨️💻",
+	"fx67ll 在前端开发工作领域掌握各类技术框架组件主要包括 Html5/Css3、JS/TS、Sass/Less、Vue/React全家桶、Ele/Ant/Arco组件库、Umi、Echarts/D3js、uni-app、Threejs、OpenLayers/Cesium/ArcGis、乾坤前端微应用加载器 🔨🔧⚙️",
+	"fx67ll 在工作生活之余研究的后端以及数据库开发技术框架主要包括 Java、SpringBoot/Cloud、MySQL/Redis/MongoDB、Nodejs/Express、Linux、Nginx、Jeckins 🧱⛱️🎊",
+	// "在这里可以了解到工作这些年 fx67ll 所掌握的各种技术技能点 🧵🧶🕹️",
+	// "主要包括 fx67ll 在前端开发工作领域所掌握的各类技术框架组件 Html5/Css3、JS/TS、Sass/Less、Vue/React全家桶、Ele/Ant/Arco组件库、Umi、Echarts/D3js、uni-app、Threejs、OpenLayers/Cesium/ArcGis、乾坤前端微应用加载器 🔨🔧⚙️",
+	// "以及包括 fx67ll 在工作生活之余自己所研究的web后端以及数据库开发技术框架Java、SpringBoot/Cloud、MySQL/Redis/MongoDB、Nodejs/Express、Linux、Nginx、Jeckins 🧱⛱️🎊",
 	"首页的废话即将要说完了，通过点击页面中的任意位置来查看下一页吧 🖱️🖱️🖱️",
 	"点击查看下一页吧️ 🎉🎉🎉"
 ];
