@@ -26,13 +26,22 @@ var PageTransitions = (function() {
 
 		$pages.eq(current).addClass('pt-page-current');
 
-		$main.on('click', function() {
-			if (isAnimating) {
+		$main.on('click', function(event) {
+			console.log(event, event.target.matches('em.fx67ll-bubble-url'));
+			if (event.target.matches('em.fx67ll-bubble-url')) {
+				// 阻止事件冒泡和默认行为
+				event.stopPropagation();
+				event.preventDefault();
+
 				return false;
+			} else {
+				if (isAnimating) {
+					return false;
+				}
+				var max = 67;
+				var randomNum = parseInt(Math.random() * max, 10) + 1;;
+				nextPage(randomNum);
 			}
-			var max = 67;
-			var randomNum = parseInt(Math.random() * max, 10) + 1;;
-			nextPage(randomNum);
 		});
 
 	}
