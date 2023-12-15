@@ -26,13 +26,10 @@ var PageTransitions = (function() {
 
 		$pages.eq(current).addClass('pt-page-current');
 
-		$main.on('click', function(event) {
-			console.log(event, event.target.matches('em.fx67ll-bubble-url'));
-			if (event.target.matches('em.fx67ll-bubble-url')) {
-				// 阻止事件冒泡和默认行为
-				event.stopPropagation();
-				event.preventDefault();
-
+		$main.on('click', function(e) {
+			if (e.target.matches('em.fx67ll-bubble-url') || e.target.matches('em.fx67ll-a')) {
+				e.stopPropagation();
+				e.preventDefault();
 				return false;
 			} else {
 				if (isAnimating) {
