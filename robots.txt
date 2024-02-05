@@ -1,8 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: .jpg$
-Disallow: /css/
-Disallow: /html/
-Disallow: /js/
-Disallow: /lib/
 Sitemap: https://fx67ll.com/sitemap.xml
