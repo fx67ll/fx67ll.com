@@ -14,7 +14,7 @@ const fx67llTypeSpeed = 28;
 const fx67llStartDelay = 188;
 const fx67llNextTimeSpace = 888;
 let fx67llStringList = [
-	"作为浩鲸二年生，fx67ll 将继续致力于提升 DMC 的前端交互使用体验，并努力转型为 DMC 团队里的一名全栈开发工程师 🐳⌨️💻",
+	"123作为浩鲸二年生，fx67ll 将继续致力于提升 DMC 的前端交互使用体验，并努力转型为 DMC 团队里的一名全栈开发工程师 🐳⌨️💻",
 	"fx67ll 在前端开发工作领域掌握 Html5/Css3、JS/TS、Sass/Less、Vue/React全家桶、ElementUI/AntDesign/ArcoDesign组件库、Umi、Echarts/D3js、uni-app、Three.js、OpenLayers/Cesium/ArcGis、乾坤前端微应用加载器 🔨🔧⚙️",
 	"fx67ll 在后端开发工作领域掌握 Java、SpringBoot/SpringCloud、MySQL/Redis/MongoDB、Nodejs/Express、Linux、Nginx、Jeckins 🧱⛱️🎊",
 	// "在这里可以了解到工作这些年 fx67ll 所掌握的各种技术技能点 🧵🧶🕹️",
