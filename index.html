@@ -79,8 +79,8 @@
 
 			.fx67ll-resume-text {
 				display: inline-block;
-				text-indent: -2.1vw;
-				margin-bottom: 2.6vw;
+				text-indent: -26px;
+				margin-bottom: 30px;
 			}
 
 			.fx67ll-resume-text-short {
@@ -88,7 +88,21 @@
 			}
 
 			.fx67ll-resume-text-long {
-				text-indent: -3.1vw;
+				text-indent: -38px;
+			}
+
+			@media screen and (max-width: 768px) {
+				.fx67ll-resume-text {
+					text-indent: -4.3vw;
+				}
+
+				.fx67ll-resume-text-short {
+					text-indent: 0;
+				}
+
+				.fx67ll-resume-text-long {
+					text-indent: -7vw;
+				}
 			}
 
 			#tip-bubble {
@@ -147,25 +161,28 @@
 				}
 			}
 
-			.fx67ll-bubble-url {
+			.fx67ll-blog-url {
 				font-size: 2.3vw;
 				margin: 0 20px;
-				top: 0;
+			}
+
+			.fx67ll-bubble-url {
+				top: 0px;
 				position: relative;
 				animation: jumpUrl 0.4s linear infinite alternate;
 			}
 
 			.fx67ll-bubble-url:hover {
-				color: #aaaa7f;
+				color: #ef8e81;
 			}
 
 			@keyframes jumpUrl {
 				from {
-					top: -10px;
+					top: -8px;
 				}
 
 				to {
-					top: 0;
+					top: 0px;
 				}
 			}
 
@@ -198,311 +215,127 @@
 
 	<body>
 		<div id="pt-main" class="pt-perspective">
-			<!-- Scanner List -->
-			<!-- PS: 使用 font-spider index.html 命令扫描的时候请放开 pt-page & L-mid-faith 两个class -->
-			<!-- <div class="pt-page">
-				<div class="L-mid-faith"> -->
-			<div style="display: none;">
-				0123456789
-				ABCDEFGHIJKLMNOPQRSTUVWXYZ
-				abcdefghijklmnopqrstuvwxyz
-				一二三四五六七八九十零
-				，。~！
-				,.~!
-
-				在这小小的宇宙里遇见你
-				种一棵树最好的时间是十年前，其次是现在
-				无限大な梦の後の何も无い世の中じゃ
-
-				山有木兮卿有意，昨夜星辰恰似你
-				好看的皮囊千篇一律，有趣的灵魂百里挑一
-
-				生活中从不缺少美，而是缺少一双发现美的眼睛
-				PC426 | 学会思考，停止盲从
-				2021夏日限定 :)
-				意大利是冠军！！！
-
-				点击有惊喜 (๑•̀ㅂ•́)و✧
-
-				2022的新年计划已经失败，接下来只有更加努力，没有退路
-
-				<!-- 浩鲸相关文案，首页打字js中的 -->
-				一周年
-				作为浩鲸二年生，将继续致力于提升的前端交互使用体验，并努力转型为团队里的一名全栈开发工程师
-				在前端开发工作领域掌握各类技术框架组件主要包括
-				在工作生活之余研究的后端以及数据库开发技术框架主要包括
-
-				<!-- 前端相关文案，首页打字js中的 -->
-				欢迎到访的个人主页简历站点现已加入浩鲸大家庭
-				在这里可以了解到工作这些年所掌握的各种技术技能点
-				主要包括在前端开发工作领域所掌握的各类技术框架组件全家桶乾坤前端微应用加载器
-				以及包括在工作生活之余自己所研究的后端以及数据库开发技术框架
-				在本站点浏览完成之后还可以访问的个人博客站点以了解更多关于我的工作项目经验以及各类技术博文
-				首页的废话即将要说完了可以通过点击页面中的任意位置来查看下一页哦
-				点击查看下一页吧️
-
-				<!-- 前端相关文案，html中的 -->
-				熟悉掌握语言并独立搭建过个人主页和技术博客网站
-				熟练掌握进行相关业务需求开发并熟练使用等主流组件库
-				能够封装公共组件并拥有在上私有部署的经验熟练使用等开发组件可以访问查看个人组件库相关资料文档
-				️️️熟练掌握和进行相关业务需求开发熟练使用等开发组件
-				了解低代码平台的二次开发流程能够封装公共组件作为自定义物料导入低代码平台
-				熟练掌握和擅长优化和封装样式表对于和的自动化构建有一定了解
-				熟悉数据可视化技能思想熟练使用高德百度地图服务等开源可视化库能够结合主流的二次开发相关大屏需求有丰富的可视化大屏开发经验
-				对等地图服务有一定了解能够使用服务结合业务完成功能开发
-				熟练使用进行移动端的开发熟悉应用能够熟练开发微信小程序以及微信公众号
-				对于多端打包常见的坑有深刻认识可以访问个人示例作品了解更多可以访问查看个人示例作品
-				拥有开发能力能够使用制作简单的模型并通过解析既定的复杂模型完成相关业务需求开发
-				曾经利用业余时间做过一些有意思的示例可以访问查看相关示例
-				对前端微服务应用有一定了解在实际项目中使用过乾坤作为前端微应用加载器
-				拥有开发能力能够使用和完成基本的业务需求开发对有一定了解查看个人示例作品
-				拥有后台开发能力能够使用和完成基本的业务需求开发独立开发过个人业务管理系统
-				熟练使用代理和持续构建能够独立完成前后台服务部署并搭建一整套自动化构建流程
-				熟练使用禅道进行团队协作开发会经常光顾社区以及开源中国学习一些最新的优秀开源项目会总结一些工作中经常遇到的问题定期写成博文发布
-
-
-				<!-- 大数据相关文案，首页打字js中的 -->
-				欢迎到访的个人主页站点
-				在这里可以了解到工作三年以来所掌握的各种技术技能点
-				主要包括在大数据工作领域所掌握的各类技术组件
-				以及包括在工作生活之余自己所研究的前后端开发技术框架
-				在本站点浏览完成之后，还可以访问 的个人博客站点以了解更多关于我的工作项目经验以及各类技术博文
-				首页的废话即将要说完了通过点击页面中的任意位置来查看下一页吧
-				点击查看下一页吧
-
-				<!-- 大数据相关文案，html中的 -->
-				语言能够使用多线程并发编程并搭建过个人主页和技术博客网站
-				熟悉环境和命令能够在系统下自编脚本搭建开发环境
-				熟练使用语句进行查询分析和清洗熟悉等各型数据库并熟练使用数据仓库工具以及交互查询工具
-				熟悉数仓搭建掌握数仓维度建模理论能够组织搭建离线数仓基本架构对实时数仓的构建有一定了解
-				掌握任务的执行流程和工作机制熟悉常用转换算子和行动算子对在工作中的优化有一定了解
-				熟练使用和进行数据查询清洗聚类提取特征集等操作对 Hive 在工作中的优化有一定了解
-				熟悉的工作机制能够利用进行数据的流式处理了解构建实时数仓
-				了解大数据开发业务中各种常用技术组件并配合编程
-				能够使用完成关系型数据库与非关系型数据库之间的数据迁移与传输
-				熟悉的日志采集流程并对的负载均衡和容错机制有一定了解
-				能够使用完成工作脚本的自动化流程调度并了解的使用
-				能够使用进行元数据管理和数据血缘治理对数据治理有一定了解
-				了解数据中台的架构与开发能够使用和完成相关后台业务逻辑开发并使用为前台可视化监控大屏提供部分图表组件开发
-				熟练使用进行团队协作开发会经常光顾社区以及开源中国学习一些最新的优秀开源项目
-				对和自动化构建有一定了解能够独立完成服务器应用部署相关一整套自动化流程的构建
-				看到这里我的技能展示也就完毕了可以点击跳转访问了解更多关于我的个人开源项目工作项目内容技术经验总结以及各类技术博文
-				<!-- </div>
-				</div> -->
-			</div>
-
-			<!-- 2023 New Version -->
 			<div class="pt-page">
 				<div id="fx67ll-typed-box" class="L-mid-faith">
 					<span id="fx67ll-typed"></span>
 					<div id="fx67ll-typed-strings">
-						<p>“Success is not final, Failure is not fatal. It is the courage to continue that counts.”
-							--Winston Churchill</p>
+						<p>欢迎到访 fx67ll 的个人主页站点，fx67ll 现已加入浩鲸🐋大家庭一周年 😃😆🤪 </p>
+						<!-- <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+						<p>It <em>types</em> out sentences.</p> -->
 					</div>
 				</div>
 			</div>
 
 			<div class="pt-page">
-				<div class="L-mid-faith">
-					<p>Welcome <strong><em><a class="fx67ll-a" href="http://guonan.love"
-									target="_blank">https://fx67ll.com</a></em></strong> ~ </p>
-					<p>More information go ------>>> <strong><em><a class="fx67ll-a fx67ll-bubble-url"
-									href="https://fx67ll.xyz" target="_blank">https://fx67ll.xyz</a></em></strong>
-					</p>
+				<div class="L-mid-faith fx67ll-resume">
+					<span class="fx67ll-resume-text">1. 熟悉掌握
+						<strong><em>Html5</em></strong>、<strong><em>Css3</em></strong>、<strong><em>JavaScript</em></strong>、<strong><em>TypeScript</em></strong>
+						语言，并搭建过个人主页<strong><em
+								class="fx67ll-bubble-url">（https://fx67ll.com）</em></strong>和技术博客网站<strong
+							class="fx67ll-xyz"><em class="fx67ll-bubble-url">（https://fx67ll.xyz）</em></strong>
+						🐌️️🌲🧱️️️</span>
+
+					<span class="fx67ll-resume-text">2. 熟练掌握 <strong><em>Vue</em></strong> 进行相关业务需求开发，并熟练使用
+						<strong><em>ElementUI</em></strong>、<strong><em>AntDesign</em></strong>、<strong><em>ArcoDesign</em></strong>
+						等主流组件库 🍀🌡️️️🎉</span>️
+
+					<span class="fx67ll-resume-text">3. 能够封装 <strong><em>Vue公共组件</em></strong> 并拥有在
+						<strong><em>npm</em></strong> 上私有部署的经验，熟练使用
+						<strong><em>Vuex</em></strong>、<strong><em>Vue-Router</em></strong>、<strong><em>Axios</em></strong>
+						等开发组件，可以访问<strong class="fx67ll-vue-ui">
+							<em class="fx67ll-bubble-url">（https://vue-ui.fx67ll.com）</em></strong>查看个人组件库相关资料文档
+						️️️️🦀⛱️️️🎊</span>
 				</div>
 			</div>
 
-			<!-- After Get Job Version -->
-			<!-- <div class="pt-page">
-				<div id="fx67ll-2022" class="L-mid-faith">
-					<span class="fx67ll-xyz">This Year 🎐 /Code more 💻 /Save money 💰 /Keep fit 🏊</span> / <span
-						id="fx67ll-nan">Love NanNan️ 💖</span>
-				</div>
-			</div> -->
+			<!-- 显示异常，暂时不加粗 -->
+			<div class="pt-page">
+				<div class="L-mid-faith fx67ll-resume">
+					<span class="fx67ll-resume-text">4. ️️️熟练掌握 <strong><em>React</em></strong> 和
+						<strong><em>Umi</em></strong> 进行相关业务需求开发，熟练使用
+						<strong><em>Redux</em></strong>、<strong><em>React
+								Hooks</em></strong>、<strong><em>Dva.js</em></strong> 等开发组件 ⚛️️🖥️🍙️</span>
 
-			<!-- Old Version -->
-			<!-- <div class="pt-page">
-				<div class="L-mid-faith ">
-					<span id="tip-bubble">点击有惊喜 (๑•̀ㅂ•́)و✧</span>
-					在这小小的宇宙里遇见你
+					<span class="fx67ll-resume-text">5. ️️️了解低代码平台 <strong><em>LowCodeEngine</em></strong> 的二次开发流程，能够封装
+						<strong><em>React公共组件</em></strong> 作为自定义物料导入低代码平台 ⌛💻🧱️</span>
 				</div>
 			</div>
-			<div class="pt-page">
-				<div id="fx67ll-tree" class="L-mid-faith">种一棵树最好的时间是十年前，其次是现在</div>
-			</div>
-			<div class="pt-page">
-				<div id="fx67ll-steve" class="L-mid-faith">If today were the last day of my life, would I want to do
-					what I am about to do today? </div>
-			</div>
-			<div class="pt-page">
-				<div id="fx67ll-dream" class="L-mid-faith">无限大な梦の後の何も无い世の中じゃ</div>
-			</div> -->
 
-			<!-- Old Version / Christmas Theme -->
-			<!-- <div class="pt-page">
-				<div class="L-mid-faith fx67ll-xyz">
-					<span id="tip-bubble">点击有惊喜 (๑•̀ㅂ•́)و✧</span>
-					在这小小的宇宙里遇见你🎅
-				</div>
-			</div>
 			<div class="pt-page">
-				<div id="fx67ll-tree" class="L-mid-faith">种一棵树最好的时间是十年前，其次是现在🎄</div>
-			</div>
-			<div class="pt-page">
-				<div id="fx67ll-steve" class="L-mid-faith">If today were the last day of my life, would I want to do
-					what I am about to do today? 🔥</div>
-			</div>
-			<div class="pt-page">
-				<div id="fx67ll-dream" class="L-mid-faith">无限大な梦の後の何も无い世の中じゃ🎁</div>
-			</div> -->
+				<div class="L-mid-faith fx67ll-resume">
+					<span class="fx67ll-resume-text">6. 熟练掌握 <strong><em>Sass</em></strong> 和
+						<strong><em>Less</em></strong>，擅长优化和封装CSS样式表，对于 <strong><em>Webpack</em></strong> 和
+						<strong><em>Vite</em></strong> 的自动化构建有一定了解 🍋🍆🥑</span>️️️
 
-			<!-- Old Version / New Emoji Theme -->
-			<!-- <div class="pt-page">
-				<div id="fx67ll-tree" class="L-mid-faith">种一棵树最好的时间是十年前，其次是现在 🌳</div>
-			</div>
-			<div class="pt-page">
-				<div id="fx67ll-steve" class="L-mid-faith">If today were the last day of my life, would I
-					want to do
-					what I am about to do today? 🔥</div>
-			</div>
-			<div class="pt-page">
-				<div id="fx67ll-dream" class="L-mid-faith">无限大な梦の後の何も无い世の中じゃ 🌱</div>
-			</div> -->
+					<span class="fx67ll-resume-text">7. 熟悉 <strong><em>数据可视化</em></strong> 技能思想，熟练使用
+						<strong><em>Echarts</em></strong>、<strong><em>D3js</em></strong> 等开源可视化库，能够结合主流的
+						<strong><em>高德</em></strong>、<strong><em>百度地图服务</em></strong> 二次开发相关大屏需求，有丰富的
+						<strong><em>可视化大屏</em></strong> 开发经验 <strong class="fx67ll-map"><em
+								class="fx67ll-bubble-url">（https://map.fx67ll.com）</em></strong> 🗻🧭🏝️</span>️️️
 
-			<!-- Future Life -->
-			<!-- <div class="pt-page">
-				<div class="L-mid-faith">山有木兮卿有意，昨夜星辰恰似你</div>
+					<span class="fx67ll-resume-text ">8. 对
+						<strong><em>OpenLayers</em></strong>、<strong><em>Cesium</em></strong>、<strong><em>ArcGis</em></strong>
+						等 <strong><em>WebGis</em></strong> 地图服务有一定了解，能够使用GIS服务结合业务完成功能开发 🚅✈️🚢</span>
+				</div>
 			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">好看的皮囊千篇一律，有趣的灵魂百里挑一</div>
-			</div> -->
 
-			<!-- 2022 Lucky Man Version -->
-			<!-- <div class="pt-page">
-				<div id="fx67ll-nan" class="L-mid-faith">
-					<span id="tip-bubble">点击有惊喜 (๑•̀ㅂ•́)و✧</span>
-					在这小小的宇宙里遇见你 💑
-				</div>
-			</div>
 			<div class="pt-page">
-				<div class="L-mid-faith">山有木兮卿有意，昨夜星辰恰似你 ✨</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">好看的皮囊千篇一律，有趣的灵魂百里挑一 👻</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">2022的新年计划已经失败，接下来只有更加努力，没有退路 👊</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					Code more 💻 / Keep fit 🏊 / Save money 💰 / Stay with family️ 💖
-				</div>
-			</div> -->
+				<div class="L-mid-faith fx67ll-resume">
+					<span class="fx67ll-resume-text">9.
+						熟练使用 <strong><em>uni-app</em></strong> 进行移动端H5App的开发，熟悉H5+应用SDK，
+						能够熟练开发 <strong><em>微信小程序</em></strong> 以及 <strong><em>微信公众号</em></strong>，
+						对于多端打包常见的坑有深刻认识，可以访问 <strong class="fx67ll-uni"><em
+								class="fx67ll-bubble-url">（https://uni.fx67ll.com）</em></strong> 了解更多个人作品
+						🚀🌏🛰️</span>
 
-			<!-- 2022 New Year Version -->
-			<!-- <div class="pt-page">
-				<div class="L-mid-faith">
-					<span id="tip-bubble">点击有惊喜 (๑•̀ㅂ•́)و✧</span>
-					GoodBye 2021 👻 &nbsp;&nbsp; HelloWorld 2022 👾
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					Happy New Year 🎉🎉🎉
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					A very very very important year for me 🔥 <br> Never give up and keep going 💪
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					Code more 💻 / Keep fit 🏊 / Save money 💰 / Stay with family️ 💖
-				</div>
-			</div>
-			<div class="pt-page">
-				<div id="fx67ll-nan" class="L-mid-faith">
-					在这小小的宇宙里遇见你 🥰
-				</div>
-			</div> -->
+					<span class="fx67ll-resume-text fx67ll-resume-text-long">10. 拥有 <strong><em>Three.js</em></strong>
+						开发能力，能够使用3DMAX制作一些简单的模型，并通过解析既定的复杂模型完成相关业务需求开发， 曾经利用业余时间做过一些有意思的示例，可以访问
+						<strong class="fx67ll-three"><em
+								class="fx67ll-bubble-url">（https://three.fx67ll.com）</em></strong>
+						查看相关示例作品 🌵🌊⏳</span>
 
-			<!-- 2021 Summer Version -->
-			<!-- <div class="pt-page">
-				<div id="fx67ll-tree" class="L-mid-faith">生活中从不缺少美，而是缺少一双发现美的眼睛</div>
+					<span class="fx67ll-resume-text fx67ll-resume-text-long">11. 对 <strong><em>前端微服务应用</em></strong>
+						有一定了解，在实际项目中使用过 <strong><em>乾坤（qiankun）</em></strong>作为前端微应用加载器 🥥🥤🧱</span>
+				</div>
 			</div>
-			<div class="pt-page">
-				<div id="fx67ll-pc426" class="L-mid-faith">PC426 | 学会思考，停止盲从</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">2021夏日限定 :)</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">意大利是冠军！！！</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">select * from world where 'someone' like '%you%'</div>
-			</div> -->
 
-			<!-- 2021 Winter Version -->
-			<!-- <div class="pt-page">
-				<div class="L-mid-faith">2021冬日限定 :)</div>
-			</div>
 			<div class="pt-page">
-				<div id="fx67ll-first" class="L-mid-faith">生活是不完美的，成长就是认识并接受这件事</div>
-			</div>
-			<div class="pt-page">
-				<div id="fx67ll-yu" class="L-mid-faith">🙂😃😆😍😔😵‍💫🤡😥😢😭💀🥴</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					当你感受不到自我价值时，你的内心会有一种空空洞洞的感觉，
-					你会感到匮乏、 自卑，只想拿外在的价值来填满这个洞，
-					你会利用别人对你的肯定和赞赏来达到这个目的，你会以虚假的价值来填补这个洞
+				<div class="L-mid-faith fx67ll-resume">
+					<span class="fx67ll-resume-text fx67ll-resume-text-long">
+						12. 拥有 <strong><em>Nodejs</em></strong> 开发能力，能够使用
+						<strong><em>Express</em></strong> 和 <strong><em>MongoDB</em></strong>
+						完成基本的业务需求开发，对 <strong><em>Egg.js</em></strong> 有一定了解，查看个人示例作品
+						<strong class="fx67ll-node"><em
+								class="fx67ll-bubble-url">（https://node.fx67ll.com）</em></strong>
+						🥚🍳🔥</span>
+
+					<span class="fx67ll-resume-text fx67ll-resume-text-long">
+						13. 拥有 <strong><em>Java</em></strong> 后台开发能力，能够使用
+						<strong><em>SpringBoot</em></strong>、SpringCloud 和 <strong><em>MySQL</em></strong>
+						完成基本的业务需求开发，独立开发过个人业务管理系统<strong class="fx67ll-java"><em
+								class="fx67ll-bubble-url">（https://vip.fx67ll.com）</em></strong>
+						🍃️️🛁🧰</span>
+
+					<span class="fx67ll-resume-text fx67ll-resume-text-long">
+						14. 熟练使用 <strong><em>Nginx</em></strong> 代理和 <strong><em>Jeckins</em></strong> 持续构建，能够独立完成前后台
+						<strong><em>Linux</em></strong> 服务部署，并搭建一整套自动化构建流程 🔗️️️🛠️🔑</span>
+
+					<span class="fx67ll-resume-text fx67ll-resume-text-long">
+						15. 熟练使用
+						<strong><em>Git</em></strong>、<strong><em>SVN</em></strong>、<strong><em>禅道</em></strong>
+						进行团队协作开发，会经常光顾 <strong><em>Github</em></strong>
+						社区以及开源中国学习一些最新的优秀开源项目，总结一些工作中遇到的问题写成博文发布 🖨️🖥️️️️📆</span>
 				</div>
 			</div>
+
 			<div class="pt-page">
-				<div class="L-mid-faith">
-					我们带着一身的坑洞四处奔忙，却往往无法察觉到它们。
-					我们通常只能意识到自己的欲望，我想要赞美、我想要成功、我想要这个人的爱、我想要这种或那种经验。
-					欲望与需求一出现，便暗示着坑洞已经冒出来了…
+				<div class="L-mid-faith fx67ll-resume">
+					<span class="fx67ll-resume-text fx67ll-resume-text-short fx67ll-xyz ">
+						️看到这里，我的技能展示也就完毕了，可以点击跳转访问 <strong><em
+								class="fx67ll-bubble-url">https://fx67ll.xyz</em></strong>
+						了解更多关于我的个人开源项目、工作项目内容、技术经验总结以及各类技术博文，Code is my life ~ 🖱️📌📋️️</span>
 				</div>
 			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					当你和某人建立起亲密的关系时，你就会用那个人来填补你的洞，
-					一旦那个人死亡或是关系结束了，你不会感觉失去了那个人，你感受到的是填补坑洞的东西不见了，感觉丧失了自己的一部分，
-					因为以前被他填满的洞现在又暴露出来了，这就是你会那么痛苦的原因
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					—— 阿玛斯《内在的探索》
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					努力想得到什么东西，其实只要沉着镇静、实事求是，就可以轻易地、神不知鬼不觉地达到目的
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					而如果过于使劲，闹得太凶，太幼稚，太没有经验，就哭啊，抓啊，拉啊，像一个小孩扯桌布，结果却是一无所获
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					只不过把桌上的好东西都扯到地上，永远也得不到了
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">
-					—— 卡夫卡《城堡》
-				</div>
-			</div>
-			<div class="pt-page">
-				<div class="L-mid-faith">世界上最稳定的关系是没有关系</div>
-			</div> -->
 		</div>
 
 		<div class="fx67ll-footer">
@@ -520,7 +353,7 @@
 		<!-- Type Animation -->
 		<script src="js/jquery.resize.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/typed.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/typeFirstPage-test.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/typeFirstPage-version-front.js" type="text/javascript" charset="utf-8"></script>
 
 		<script type="text/javascript">
 			// Tips Bubble Animation
@@ -533,6 +366,23 @@
 				}, 5400);
 			}
 
+			$('.fx67ll-bubble-url').find('span').hide();
+
+			// 当鼠标悬浮在父元素上时，显示子元素
+			$('.fx67ll-bubble-url').on('mouseenter', function() {
+				$(this).find('span').show();
+			});
+
+			// 当鼠标移出父元素时，隐藏子元素
+			$('.fx67ll-bubble-url').on('mouseleave', function() {
+				$(this).find('span').hide();
+			});
+
+			// 当点击子元素时，完成页面跳转
+			$('.fx67ll-bubble-url').on('click', 'span', function() {
+				window.location.href = 'https://fx67ll.xyz';
+			});
+
 			// For https://fx67ll.xyz
 			if (document.getElementsByClassName("fx67ll-xyz")) {
 				$('.fx67ll-xyz').click(function() {
@@ -540,45 +390,53 @@
 				});
 			}
 
+			// For https://vue-ui.fx67ll.com
+			if (document.getElementsByClassName("fx67ll-vue-ui")) {
+				$('.fx67ll-vue-ui').click(function() {
+					window.open('https://vue-ui.fx67ll.com');
+				});
+			}
+			
+			// For https://map.fx67ll.com
+			if (document.getElementsByClassName("fx67ll-map")) {
+				$('.fx67ll-map').click(function() {
+					window.open('https://map.fx67ll.com');
+				});
+			}
+
+			// For https://uni.fx67ll.com
+			if (document.getElementsByClassName("fx67ll-uni")) {
+				$('.fx67ll-uni').click(function() {
+					window.open('https://uni.fx67ll.com');
+				});
+			}
+
+			// For https://three.fx67ll.com
+			if (document.getElementsByClassName("fx67ll-three")) {
+				$('.fx67ll-three').click(function() {
+					window.open('https://three.fx67ll.com');
+				});
+			}
+
+			// For https://node.fx67ll.com
+			if (document.getElementsByClassName("fx67ll-node")) {
+				$('.fx67ll-node').click(function() {
+					window.open('https://node.fx67ll.com');
+				});
+			}
+
+			// For https://vip.fx67ll.com
+			if (document.getElementsByClassName("fx67ll-java")) {
+				$('.fx67ll-java').click(function() {
+					window.open('https://vip.fx67ll.com');
+				});
+			}
+
 			// For Love
 			if (document.getElementById("fx67ll-nan")) {
 				$('#fx67ll-nan').click(function() {
-					window.open('http://guonan.love');
+					window.open('https://guonan.love');
 					console.log("I love u three thousand times！！！");
-				});
-			}
-
-			// For fx67ll
-			if (document.getElementById("fx67ll-tree")) {
-				$('#fx67ll-tree').click(function() {
-					console.log('This is my tree —— https://fx67ll.xyz');
-					window.open('https://fx67ll.xyz');
-				});
-			}
-			if (document.getElementById("fx67ll-steve")) {
-				$('#fx67ll-steve').click(function() {
-					console.log('Steve Jobs !!!');
-				});
-			}
-			if (document.getElementById("fx67ll-dream")) {
-				$('#fx67ll-dream').click(function() {
-					console.log('Never Give Up !!!');
-				});
-			}
-
-			// 2022 is dead ~
-			if (document.getElementById("fx67ll-2022")) {
-				$('#fx67ll-2022').click(function() {
-					console.log(
-						'2022-01/02/03 is dead but 2022-04 is a new beginning , i must believe i can do it !!! pls come on !!! like what i do before !!!'
-					);
-				});
-			}
-
-			// For 426
-			if (document.getElementById("fx67ll-pc426")) {
-				$('#fx67ll-pc426').click(function() {
-					window.open('https://www.pc426.com');
 				});
 			}
 
@@ -586,9 +444,9 @@
 			console.log(
 				"####### #     #  #####  ####### #       #     \n#        #   #  #     # #    #  #       #       \n#         # #   #           #   #       #       \n#####      #    ######     #    #       #       \n#         # #   #     #   #     #       #\n#        #   #  #     #   #     #       #\n#       #     #  #####    #     ####### ####### "
 			);
-			console.log('keep running!');
+			console.log('keep coding!');
 			console.log('https://fx67ll.xyz');
-			console.log('Last updated: November 24, 2023');
+			console.log('Last updated: November 29, 2023');
 
 			// nowYear
 			document.getElementById("nowYear").innerHTML = new Date().getFullYear();
