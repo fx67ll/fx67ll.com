@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /img
+Disallow: /js
+Disallow: /css
+Sitemap: https://fx67ll.com/sitemap.xml
