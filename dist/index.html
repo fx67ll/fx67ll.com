@@ -219,7 +219,7 @@
 				<div id="fx67ll-typed-box" class="L-mid-faith">
 					<span id="fx67ll-typed"></span>
 					<div id="fx67ll-typed-strings">
-						<p>欢迎到访 fx67ll 的个人主页站点，fx67ll 现已加入浩鲸🐋大家庭一周年 😃😆🤪 </p>
+						<p>欢迎到访 fx67ll 的个人主页站点，fx67ll 现已加入浩鲸🐋大家庭 <span id="workYear">1023</span> 天 😃😆🤪 </p>
 						<!-- <p>Typed.js is a <strong>JavaScript</strong> library.</p>
 						<p>It <em>types</em> out sentences.</p> -->
 					</div>
@@ -341,7 +341,7 @@
 		<div class="fx67ll-footer">
 			Designed & Powered by
 			<a href="https://nav.fx67ll.com" target="_blank">fx67ll</a>
-			&#12288; Copyright© 2018- <span id="nowYear">2022</span> &#12288;
+			&#12288; Copyright© 2018- <span id="nowYear">2024</span> &#12288;
 			<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">皖ICP备18017174号</a>
 		</div>
 
@@ -349,6 +349,16 @@
 		<script src="js/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/pagetransitions.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			// workYear
+			const pastDate = new Date('2022-10-09');
+			const currentDate = new Date();
+			const timeDifference = currentDate - pastDate;
+			const yearDifference = timeDifference / (1000 * 60 * 60 * 24);
+			const workYear = yearDifference.toFixed(2);
+			document.getElementById("workYear").innerHTML = workYear;
+		</script>
 
 		<!-- Type Animation -->
 		<script src="js/jquery.resize.min.js" type="text/javascript" charset="utf-8"></script>
