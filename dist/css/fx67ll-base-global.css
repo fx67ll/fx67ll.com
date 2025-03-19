@@ -1,0 +1,51 @@
+/* ----------------------------------------- */
+@font-face {
+	font-family: "PFR";
+	src: url("../fonts/PingFang Regular.ttf");
+}
+
+/* ----------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* 1rem = 10px */
+	font-size: 10px;
+}
+
+body,
+html {
+	background-color: rgba(236, 240, 241, 1);
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+/* ----------------------------------------- */
+.fx67ll-a {
+	text-decoration: none;
+	color: #2ECC71;
+}
+
+.fx67ll-footer {
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	user-select: text;
+	z-index: 99999;
+	color: #bababa;
+	cursor: pointer;
+}
+
+.fx67ll-footer>a {
+	color: #bababa;
+}
+
+.fx67ll-footer>a:hover {
+	color: #42b983;
+}

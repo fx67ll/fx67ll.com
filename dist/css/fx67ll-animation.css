@@ -1,0 +1,80 @@
+/* ----------------------------------------- */
+#tip-bubble {
+	display: block;
+	width: 140px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	background-color: #2ECC71;
+	color: #ffffff;
+	position: relative;
+	top: -10px;
+	right: -87%;
+	border-radius: 10px;
+	font-size: 12px;
+	animation: jumpTip 0.4s linear infinite alternate;
+}
+
+#tip-bubble:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 12px solid #2ECC71;
+	border-bottom: 10px solid transparent;
+}
+
+@keyframes jumpTip {
+	from {
+		top: -20px;
+	}
+
+	to {
+		top: -10px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#tip-bubble {
+		right: -65%;
+	}
+}
+
+/* ----------------------------------------- */
+.fx67ll-bubble-url {
+	font-size: 2.3vw;
+	margin: 0 20px;
+	top: 0;
+	position: relative;
+	animation: jumpUrl 0.4s linear infinite alternate;
+}
+
+.fx67ll-bubble-url:hover {
+	color: #aaaa7f;
+}
+
+@keyframes jumpUrl {
+	from {
+		top: -10px;
+	}
+
+	to {
+		top: 0;
+	}
+}
+
+/* ----------------------------------------- */
+@keyframes goDie {
+	from {
+		opacity: 1;
+		top: -20px;
+	}
+
+	to {
+		opacity: 0;
+		top: -10px;
+	}
+}
