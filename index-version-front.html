@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<script>
-		var _hmt = _hmt || [];
-		(function() {
-			var hm = document.createElement("script");
-			hm.src = "https://hm.baidu.com/hm.js?a5ed5564cbfffe6ea12d12bf87fbefc4";
-			var s = document.getElementsByTagName("script")[0];
-			s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
+	<script src="js/index/baiducount.js" type="text/javascript" charset="utf-8"></script>
 	<head>
 		<meta name="baidu-site-verification" content="codeva-xlvlCThG8g" />
 		<meta name="baidu-site-verification" content="codeva-lLPcP4gYnU" />
@@ -27,64 +19,16 @@
 		<!-- <link rel="stylesheet" type="text/css" href="lib/Page Transition/css/multilevelmenu.css"/> -->
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/animations.css" />
-		<!-- L-css -->
-		<link rel="stylesheet" type="text/css" href="css/L-base.css" />
-		<!-- <link rel="stylesheet" type="text/css" href="css/L-index.css" /> -->
+		<!-- fx67ll style -->
+		<link rel="stylesheet" type="text/css" href="css/fx67ll-base-global.css" />
+		<link rel="stylesheet" type="text/css" href="css/fx67ll-index-global.css" />
+		<link rel="stylesheet" type="text/css" href="css/fx67ll-animation.css" />
 
+		<!-- 本页面单独修改覆盖的样式 -->
 		<style type="text/css">
-			.pt-page {
-				display: -webkit-box;
-				display: -moz-box;
-				display: -ms-flexbox;
-				display: -webkit-flex;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			}
-
-			.L-mid-faith {
-				/* 为了追求视觉上的的舒服我稍微调整了一下位置，就酱儿 */
-				max-width: 70%;
-				position: relative;
-				bottom: 2vw;
-				font-family: "PFR";
-				/* font-size: 2.8rem; */
-				font-size: 1.8vw;
-				color: #2ECC71;
-				text-align: center;
-				cursor: pointer;
-				user-select: none;
-			}
-
-			/* 支持一下 iPad mini 宽度以下的设备字体稍稍放大 */
-			@media screen and (max-width: 768px) {
-				.pt-page {
-					text-align: center;
-				}
-
-				.L-mid-faith {
-					font-size: 3.8vw;
-				}
-			}
-
-			.fx67ll-resume {
-				text-align: left;
-				word-wrap: break-word;
-			}
-
 			.fx67ll-resume-text {
-				display: inline-block;
 				text-indent: -26px;
 				margin-bottom: 30px;
-			}
-
-			.fx67ll-resume-text-short {
-				text-indent: 0;
 			}
 
 			.fx67ll-resume-text-long {
@@ -105,73 +49,6 @@
 				}
 			}
 
-			#tip-bubble {
-				display: block;
-				width: 140px;
-				height: 28px;
-				line-height: 28px;
-				text-align: center;
-				background-color: #2ECC71;
-				color: #ffffff;
-				position: relative;
-				top: -10px;
-				right: -87%;
-				border-radius: 10px;
-				font-size: 12px;
-				animation: jumpTip 0.4s linear infinite alternate;
-			}
-
-			#tip-bubble:before {
-				content: "";
-				position: absolute;
-				left: 0;
-				bottom: -10px;
-				width: 0;
-				height: 0;
-				border-top: 10px solid transparent;
-				border-left: 12px solid #2ECC71;
-				border-bottom: 10px solid transparent;
-			}
-
-			@keyframes jumpTip {
-				from {
-					top: -20px;
-				}
-
-				to {
-					top: -10px;
-				}
-			}
-
-			@keyframes goDie {
-				from {
-					opacity: 1;
-					top: -20px;
-				}
-
-				to {
-					opacity: 0;
-					top: -10px;
-				}
-			}
-
-			@media screen and (max-width: 500px) {
-				#tip-bubble {
-					right: -65%;
-				}
-			}
-
-			.fx67ll-blog-url {
-				font-size: 2.3vw;
-				margin: 0 20px;
-			}
-
-			.fx67ll-bubble-url {
-				top: 0px;
-				position: relative;
-				animation: jumpUrl 0.4s linear infinite alternate;
-			}
-
 			.fx67ll-bubble-url:hover {
 				color: #ef8e81;
 			}
@@ -185,31 +62,6 @@
 					top: 0px;
 				}
 			}
-
-			.fx67ll-a {
-				text-decoration: none;
-				color: #2ECC71;
-			}
-
-			.fx67ll-footer {
-				width: 100%;
-				padding: 20px 0;
-				text-align: center;
-				position: absolute;
-				bottom: 0;
-				user-select: text;
-				z-index: 99999;
-				color: #bababa;
-				cursor: pointer;
-			}
-
-			.fx67ll-footer>a {
-				color: #bababa;
-			}
-
-			.fx67ll-footer>a:hover {
-				color: #42b983;
-			}
 		</style>
 	</head>
 
@@ -219,7 +71,7 @@
 				<div id="fx67ll-typed-box" class="L-mid-faith">
 					<span id="fx67ll-typed"></span>
 					<div id="fx67ll-typed-strings">
-						<p>欢迎到访 fx67ll 的个人主页站点，fx67ll 现已加入浩鲸🐋大家庭 <span id="workYear">1023</span> 天 😃😆🤪 </p>
+						<p>欢迎到访 fx67ll 的个人主页站点，fx67ll 现已加入浩鲸🐋大家庭 <span id="workYear"></span> 😃😆🤪 </p>
 						<!-- <p>Typed.js is a <strong>JavaScript</strong> library.</p>
 						<p>It <em>types</em> out sentences.</p> -->
 					</div>
@@ -230,8 +82,7 @@
 				<div class="L-mid-faith fx67ll-resume">
 					<span class="fx67ll-resume-text">1. 熟悉掌握
 						<strong><em>Html5</em></strong>、<strong><em>Css3</em></strong>、<strong><em>JavaScript</em></strong>、<strong><em>TypeScript</em></strong>
-						语言，并搭建过个人主页<strong><em
-								class="fx67ll-bubble-url">（https://fx67ll.com）</em></strong>和技术博客网站<strong
+						语言，并搭建过个人主页<strong><em class="fx67ll-bubble-url">（https://fx67ll.com）</em></strong>和技术博客<strong
 							class="fx67ll-xyz"><em class="fx67ll-bubble-url">（https://fx67ll.xyz）</em></strong>
 						🐌️️🌲🧱️️️</span>
 
@@ -318,7 +169,8 @@
 
 					<span class="fx67ll-resume-text fx67ll-resume-text-long">
 						14. 熟练使用 <strong><em>Nginx</em></strong> 代理和 <strong><em>Jeckins</em></strong> 持续构建，能够独立完成前后台
-						<strong><em>Linux</em></strong> 服务部署，并搭建一整套自动化构建流程 🔗️️️🛠️🔑</span>
+						<strong><em>Linux</em></strong> 服务部署，并搭建一整套自动化构建流程 <strong class="fx67ll-jenkins"><em
+								class="fx67ll-bubble-url">（https://test.fx67ll.com）</em></strong> 🔗️️️🛠️🔑</span>
 
 					<span class="fx67ll-resume-text fx67ll-resume-text-long">
 						15. 熟练使用
@@ -346,121 +198,21 @@
 		</div>
 
 		<!-- Page Transition -->
-		<script src="js/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/pagetransitions.js" type="text/javascript" charset="utf-8"></script>
-
-		<script type="text/javascript">
-			// workYear
-			const pastDate = new Date('2022-10-09');
-			const currentDate = new Date();
-			const timeDifference = currentDate - pastDate;
-			const yearDifference = timeDifference / (1000 * 60 * 60 * 24);
-			const workYear = yearDifference.toFixed(2);
-			document.getElementById("workYear").innerHTML = workYear;
-		</script>
+		<script src="js/utils/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/pagetransitions.js" type="text/javascript" charset="utf-8"></script>
 
 		<!-- Type Animation -->
-		<script src="js/jquery.resize.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/typed.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/typeFirstPage-version-front.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/jquery.resize.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/typed.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index/typeFirstPage-version-front.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- fx67ll utils -->
+		<script src="js/index/indexGlobalUtils.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index/countDateTimeUtils.js" type="text/javascript" charset="utf-8"></script>
 
 		<script type="text/javascript">
-			// Tips Bubble Animation
-			if (document.getElementById("tip-bubble")) {
-				setTimeout(function() {
-					document.getElementById("tip-bubble").style.animation = "goDie 0.6s linear 1";
-				}, 4800);
-				setTimeout(function() {
-					document.getElementById("tip-bubble").style.opacity = "0";
-				}, 5400);
-			}
-
-			$('.fx67ll-bubble-url').find('span').hide();
-
-			// 当鼠标悬浮在父元素上时，显示子元素
-			$('.fx67ll-bubble-url').on('mouseenter', function() {
-				$(this).find('span').show();
-			});
-
-			// 当鼠标移出父元素时，隐藏子元素
-			$('.fx67ll-bubble-url').on('mouseleave', function() {
-				$(this).find('span').hide();
-			});
-
-			// 当点击子元素时，完成页面跳转
-			$('.fx67ll-bubble-url').on('click', 'span', function() {
-				window.location.href = 'https://fx67ll.xyz';
-			});
-
-			// For https://fx67ll.xyz
-			if (document.getElementsByClassName("fx67ll-xyz")) {
-				$('.fx67ll-xyz').click(function() {
-					window.open('https://fx67ll.xyz');
-				});
-			}
-
-			// For https://vue-ui.fx67ll.com
-			if (document.getElementsByClassName("fx67ll-vue-ui")) {
-				$('.fx67ll-vue-ui').click(function() {
-					window.open('https://vue-ui.fx67ll.com');
-				});
-			}
-
-			// For https://map.fx67ll.com
-			if (document.getElementsByClassName("fx67ll-map")) {
-				$('.fx67ll-map').click(function() {
-					window.open('https://map.fx67ll.com');
-				});
-			}
-
-			// For https://uni.fx67ll.com
-			if (document.getElementsByClassName("fx67ll-uni")) {
-				$('.fx67ll-uni').click(function() {
-					window.open('https://uni.fx67ll.com');
-				});
-			}
-
-			// For https://three.fx67ll.com
-			if (document.getElementsByClassName("fx67ll-three")) {
-				$('.fx67ll-three').click(function() {
-					window.open('https://three.fx67ll.com');
-				});
-			}
-
-			// For https://node.fx67ll.com
-			if (document.getElementsByClassName("fx67ll-node")) {
-				$('.fx67ll-node').click(function() {
-					window.open('https://node.fx67ll.com');
-				});
-			}
-
-			// For https://vip.fx67ll.com
-			if (document.getElementsByClassName("fx67ll-java")) {
-				$('.fx67ll-java').click(function() {
-					window.open('https://vip.fx67ll.com');
-				});
-			}
-
-			// For Love
-			if (document.getElementById("fx67ll-nan")) {
-				$('#fx67ll-nan').click(function() {
-					// window.open('https://guonan.love');
-					window.open('https://love.fx67ll.com');
-					console.log("I love u three thousand times！！！");
-				});
-			}
-
-			// egg
-			console.log(
-				"####### #     #  #####  ####### #       #     \n#        #   #  #     # #    #  #       #       \n#         # #   #           #   #       #       \n#####      #    ######     #    #       #       \n#         # #   #     #   #     #       #\n#        #   #  #     #   #     #       #\n#       #     #  #####    #     ####### ####### "
-			);
-			console.log('keep coding!');
-			console.log('https://fx67ll.xyz');
-			console.log('Last updated: November 29, 2023');
-
-			// nowYear
-			document.getElementById("nowYear").innerHTML = new Date().getFullYear();
+			console.log('Last updated: March 3, 2025');
 		</script>
 	</body>
 </html>

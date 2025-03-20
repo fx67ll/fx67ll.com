@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<script>
-		var _hmt = _hmt || [];
-		(function() {
-			var hm = document.createElement("script");
-			hm.src = "https://hm.baidu.com/hm.js?a5ed5564cbfffe6ea12d12bf87fbefc4";
-			var s = document.getElementsByTagName("script")[0];
-			s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
+	<script src="js/index/baiducount.js" type="text/javascript" charset="utf-8"></script>
 	<head>
 		<meta name="baidu-site-verification" content="codeva-xlvlCThG8g" />
 		<meta name="baidu-site-verification" content="codeva-lLPcP4gYnU" />
@@ -27,173 +19,12 @@
 		<!-- <link rel="stylesheet" type="text/css" href="lib/Page Transition/css/multilevelmenu.css"/> -->
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/animations.css" />
-		<!-- L-css -->
-		<link rel="stylesheet" type="text/css" href="css/L-base.css" />
-		<!-- <link rel="stylesheet" type="text/css" href="css/L-index.css" /> -->
+		<!-- fx67ll style -->
+		<link rel="stylesheet" type="text/css" href="css/fx67ll-base-global.css" />
+		<link rel="stylesheet" type="text/css" href="css/fx67ll-index-global.css" />
+		<link rel="stylesheet" type="text/css" href="css/fx67ll-animation.css" />
 
-		<style type="text/css">
-			.pt-page {
-				display: -webkit-box;
-				display: -moz-box;
-				display: -ms-flexbox;
-				display: -webkit-flex;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			}
-
-			.L-mid-faith {
-				/* 为了追求视觉上的的舒服我稍微调整了一下位置，就酱儿 */
-				max-width: 70%;
-				position: relative;
-				bottom: 2vw;
-				font-family: "PFR";
-				/* font-size: 2.8rem; */
-				font-size: 1.8vw;
-				color: #2ECC71;
-				text-align: center;
-				cursor: pointer;
-				user-select: none;
-			}
-
-			/* 支持一下 iPad mini 宽度以下的设备字体稍稍放大 */
-			@media screen and (max-width: 768px) {
-				.pt-page {
-					text-align: center;
-				}
-
-				.L-mid-faith {
-					font-size: 3.8vw;
-				}
-			}
-
-			.fx67ll-resume {
-				text-align: left;
-				word-wrap: break-word;
-			}
-
-			.fx67ll-resume-text {
-				display: inline-block;
-				text-indent: -2.1vw;
-				margin-bottom: 2.6vw;
-			}
-
-			.fx67ll-resume-text-short {
-				text-indent: 0;
-			}
-
-			.fx67ll-resume-text-long {
-				text-indent: -3.1vw;
-			}
-
-			#tip-bubble {
-				display: block;
-				width: 140px;
-				height: 28px;
-				line-height: 28px;
-				text-align: center;
-				background-color: #2ECC71;
-				color: #ffffff;
-				position: relative;
-				top: -10px;
-				right: -87%;
-				border-radius: 10px;
-				font-size: 12px;
-				animation: jumpTip 0.4s linear infinite alternate;
-			}
-
-			#tip-bubble:before {
-				content: "";
-				position: absolute;
-				left: 0;
-				bottom: -10px;
-				width: 0;
-				height: 0;
-				border-top: 10px solid transparent;
-				border-left: 12px solid #2ECC71;
-				border-bottom: 10px solid transparent;
-			}
-
-			@keyframes jumpTip {
-				from {
-					top: -20px;
-				}
-
-				to {
-					top: -10px;
-				}
-			}
-
-			@keyframes goDie {
-				from {
-					opacity: 1;
-					top: -20px;
-				}
-
-				to {
-					opacity: 0;
-					top: -10px;
-				}
-			}
-
-			@media screen and (max-width: 500px) {
-				#tip-bubble {
-					right: -65%;
-				}
-			}
-
-			.fx67ll-bubble-url {
-				font-size: 2.3vw;
-				margin: 0 20px;
-				top: 0;
-				position: relative;
-				animation: jumpUrl 0.4s linear infinite alternate;
-			}
-
-			.fx67ll-bubble-url:hover {
-				color: #aaaa7f;
-			}
-
-			@keyframes jumpUrl {
-				from {
-					top: -10px;
-				}
-
-				to {
-					top: 0;
-				}
-			}
-
-			.fx67ll-a {
-				text-decoration: none;
-				color: #2ECC71;
-			}
-
-			.fx67ll-footer {
-				width: 100%;
-				padding: 20px 0;
-				text-align: center;
-				position: absolute;
-				bottom: 0;
-				user-select: text;
-				z-index: 99999;
-				color: #bababa;
-				cursor: pointer;
-			}
-
-			.fx67ll-footer>a {
-				color: #bababa;
-			}
-
-			.fx67ll-footer>a:hover {
-				color: #42b983;
-			}
-		</style>
+		<!-- <style type="text/css"></style> -->
 	</head>
 
 	<body>
@@ -207,6 +38,7 @@
 				ABCDEFGHIJKLMNOPQRSTUVWXYZ
 				abcdefghijklmnopqrstuvwxyz
 				一二三四五六七八九十零
+				年月日天时分秒
 				，。~！
 				,.~!
 
@@ -296,8 +128,8 @@
 				<div id="fx67ll-typed-box" class="L-mid-faith">
 					<span id="fx67ll-typed"></span>
 					<div id="fx67ll-typed-strings">
-						<p>“Success is not final, Failure is not fatal. It is the courage to continue that counts.”
-							--Winston Churchill</p>
+						<p>“Success is not final, Failure is not fatal.  It is the courage to continue that counts.” 
+							—— Winston Churchill</p>
 					</div>
 				</div>
 			</div>
@@ -317,8 +149,8 @@
 			<!-- After Get Job Version -->
 			<!-- <div class="pt-page">
 				<div id="fx67ll-2022" class="L-mid-faith">
-					<span class="fx67ll-xyz">This Year 🎐 /Code more 💻 /Save money 💰 /Keep fit 🏊</span> / <span
-						id="fx67ll-nan">Love NanNan️ 💖</span>
+					<span class="fx67ll-xyz">This Year ?? /Code more ?? /Save money ?? /Keep fit ??</span> / <span
+						id="fx67ll-nan">Love NanNan️ ??</span>
 				</div>
 			</div> -->
 
@@ -344,31 +176,31 @@
 			<!-- <div class="pt-page">
 				<div class="L-mid-faith fx67ll-xyz">
 					<span id="tip-bubble">点击有惊喜 (๑•̀ㅂ•́)و✧</span>
-					在这小小的宇宙里遇见你🎅
+					在这小小的宇宙里遇见你??
 				</div>
 			</div>
 			<div class="pt-page">
-				<div id="fx67ll-tree" class="L-mid-faith">种一棵树最好的时间是十年前，其次是现在🎄</div>
+				<div id="fx67ll-tree" class="L-mid-faith">种一棵树最好的时间是十年前，其次是现在??</div>
 			</div>
 			<div class="pt-page">
 				<div id="fx67ll-steve" class="L-mid-faith">If today were the last day of my life, would I want to do
-					what I am about to do today? 🔥</div>
+					what I am about to do today? ??</div>
 			</div>
 			<div class="pt-page">
-				<div id="fx67ll-dream" class="L-mid-faith">无限大な梦の後の何も无い世の中じゃ🎁</div>
+				<div id="fx67ll-dream" class="L-mid-faith">无限大な梦の後の何も无い世の中じゃ??</div>
 			</div> -->
 
 			<!-- Old Version / New Emoji Theme -->
 			<!-- <div class="pt-page">
-				<div id="fx67ll-tree" class="L-mid-faith">种一棵树最好的时间是十年前，其次是现在 🌳</div>
+				<div id="fx67ll-tree" class="L-mid-faith">种一棵树最好的时间是十年前，其次是现在 ??</div>
 			</div>
 			<div class="pt-page">
 				<div id="fx67ll-steve" class="L-mid-faith">If today were the last day of my life, would I
 					want to do
-					what I am about to do today? 🔥</div>
+					what I am about to do today? ??</div>
 			</div>
 			<div class="pt-page">
-				<div id="fx67ll-dream" class="L-mid-faith">无限大な梦の後の何も无い世の中じゃ 🌱</div>
+				<div id="fx67ll-dream" class="L-mid-faith">无限大な梦の後の何も无い世の中じゃ ??</div>
 			</div> -->
 
 			<!-- Future Life -->
@@ -383,21 +215,21 @@
 			<!-- <div class="pt-page">
 				<div id="fx67ll-nan" class="L-mid-faith">
 					<span id="tip-bubble">点击有惊喜 (๑•̀ㅂ•́)و✧</span>
-					在这小小的宇宙里遇见你 💑
+					在这小小的宇宙里遇见你 ??
 				</div>
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith">山有木兮卿有意，昨夜星辰恰似你 ✨</div>
 			</div>
 			<div class="pt-page">
-				<div class="L-mid-faith">好看的皮囊千篇一律，有趣的灵魂百里挑一 👻</div>
+				<div class="L-mid-faith">好看的皮囊千篇一律，有趣的灵魂百里挑一 ??</div>
 			</div>
 			<div class="pt-page">
-				<div class="L-mid-faith">2022的新年计划已经失败，接下来只有更加努力，没有退路 👊</div>
+				<div class="L-mid-faith">2022的新年计划已经失败，接下来只有更加努力，没有退路 ??</div>
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith">
-					Code more 💻 / Keep fit 🏊 / Save money 💰 / Stay with family️ 💖
+					Code more ?? / Keep fit ?? / Save money ?? / Stay with family️ ??
 				</div>
 			</div> -->
 
@@ -405,27 +237,27 @@
 			<!-- <div class="pt-page">
 				<div class="L-mid-faith">
 					<span id="tip-bubble">点击有惊喜 (๑•̀ㅂ•́)و✧</span>
-					GoodBye 2021 👻 &nbsp;&nbsp; HelloWorld 2022 👾
+					GoodBye 2021 ?? &nbsp;&nbsp; HelloWorld 2022 ??
 				</div>
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith">
-					Happy New Year 🎉🎉🎉
+					Happy New Year ??????
 				</div>
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith">
-					A very very very important year for me 🔥 <br> Never give up and keep going 💪
+					A very very very important year for me ?? <br> Never give up and keep going ??
 				</div>
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith">
-					Code more 💻 / Keep fit 🏊 / Save money 💰 / Stay with family️ 💖
+					Code more ?? / Keep fit ?? / Save money ?? / Stay with family️ ??
 				</div>
 			</div>
 			<div class="pt-page">
 				<div id="fx67ll-nan" class="L-mid-faith">
-					在这小小的宇宙里遇见你 🥰
+					在这小小的宇宙里遇见你 ??
 				</div>
 			</div> -->
 
@@ -454,7 +286,7 @@
 				<div id="fx67ll-first" class="L-mid-faith">生活是不完美的，成长就是认识并接受这件事</div>
 			</div>
 			<div class="pt-page">
-				<div id="fx67ll-yu" class="L-mid-faith">🙂😃😆😍😔😵‍💫🤡😥😢😭💀🥴</div>
+				<div id="fx67ll-yu" class="L-mid-faith">????????????‍??????????????</div>
 			</div>
 			<div class="pt-page">
 				<div class="L-mid-faith">
@@ -513,88 +345,23 @@
 			&#12288; Copyright© 2018- <span id="nowYear">2022</span> &#12288;
 			<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">皖ICP备18017174号</a>
 		</div>
-
+		
 		<!-- Page Transition -->
-		<script src="js/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/pagetransitions.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/pagetransitions.js" type="text/javascript" charset="utf-8"></script>
 
 		<!-- Type Animation -->
-		<script src="js/jquery.resize.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/typed.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/typeFirstPage-version-old.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/jquery.resize.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/typed.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index/typeFirstPage-version-old.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index/fx67ll-index-global.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- fx67ll utils -->
+		<script src="js/index/indexGlobalUtils.js" type="text/javascript" charset="utf-8"></script>
 
 		<script type="text/javascript">
-			// Tips Bubble Animation
-			if (document.getElementById("tip-bubble")) {
-				setTimeout(function() {
-					document.getElementById("tip-bubble").style.animation = "goDie 0.6s linear 1";
-				}, 4800);
-				setTimeout(function() {
-					document.getElementById("tip-bubble").style.opacity = "0";
-				}, 5400);
-			}
-
-			// For https://fx67ll.xyz
-			if (document.getElementsByClassName("fx67ll-xyz")) {
-				$('.fx67ll-xyz').click(function() {
-					window.open('https://fx67ll.xyz');
-				});
-			}
-
-			// For Love
-			if (document.getElementById("fx67ll-nan")) {
-				$('#fx67ll-nan').click(function() {
-					// window.open('https://guonan.love');
-					window.open('https://love.fx67ll.com');
-					console.log("I love u three thousand times！！！");
-				});
-			}
-
-			// For fx67ll
-			if (document.getElementById("fx67ll-tree")) {
-				$('#fx67ll-tree').click(function() {
-					console.log('This is my tree —— https://fx67ll.xyz');
-					window.open('https://fx67ll.xyz');
-				});
-			}
-			if (document.getElementById("fx67ll-steve")) {
-				$('#fx67ll-steve').click(function() {
-					console.log('Steve Jobs !!!');
-				});
-			}
-			if (document.getElementById("fx67ll-dream")) {
-				$('#fx67ll-dream').click(function() {
-					console.log('Never Give Up !!!');
-				});
-			}
-
-			// 2022 is dead ~
-			if (document.getElementById("fx67ll-2022")) {
-				$('#fx67ll-2022').click(function() {
-					console.log(
-						'2022-01/02/03 is dead but 2022-04 is a new beginning , i must believe i can do it !!! pls come on !!! like what i do before !!!'
-					);
-				});
-			}
-
-			// For 426
-			if (document.getElementById("fx67ll-pc426")) {
-				$('#fx67ll-pc426').click(function() {
-					window.open('https://www.pc426.com');
-				});
-			}
-
-			// egg
-			console.log(
-				"####### #     #  #####  ####### #       #     \n#        #   #  #     # #    #  #       #       \n#         # #   #           #   #       #       \n#####      #    ######     #    #       #       \n#         # #   #     #   #     #       #\n#        #   #  #     #   #     #       #\n#       #     #  #####    #     ####### ####### "
-			);
-			console.log('keep running!');
-			console.log('https://fx67ll.xyz');
-			console.log('Last updated: November 24, 2023');
-
-			// nowYear
-			document.getElementById("nowYear").innerHTML = new Date().getFullYear();
+			console.log('Last updated: March 3, 2025');
 		</script>
 	</body>
 </html>
