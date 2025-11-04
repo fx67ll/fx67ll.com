@@ -79,7 +79,7 @@ if (document.getElementsByClassName("fx67ll-java")) {
 // For Jenkins
 if (document.getElementsByClassName("fx67ll-jenkins")) {
 	$('.fx67ll-jenkins').click(function() {
-		window.open('https://test.fx67ll.com/jenkins');
+		window.open('https://run.fx67ll.com/jenkins');
 	});
 }
 
