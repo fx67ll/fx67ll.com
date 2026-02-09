@@ -41,6 +41,13 @@ if (document.getElementsByClassName("fx67ll-vue-ui")) {
 	});
 }
 
+// For https://react.fx67ll.com
+if (document.getElementsByClassName("fx67ll-react")) {
+	$('.fx67ll-react').click(function() {
+		window.open('https://react.fx67ll.com');
+	});
+}
+
 // For https://map.fx67ll.com
 if (document.getElementsByClassName("fx67ll-map")) {
 	$('.fx67ll-map').click(function() {
@@ -138,7 +145,19 @@ console.log(
 console.log('keep running!');
 console.log('https://fx67ll.xyz');
 
-// nowYear
+// nowYear - id
 if (document.getElementById("nowYear")) {
 	document.getElementById("nowYear").innerHTML = new Date().getFullYear();
+}
+
+// nowYear - classNames (无法给动态元素处理)
+// 1. 获取所有class为nowYear的元素（返回HTMLCollection类数组对象）
+const yearElements = document.getElementsByClassName("nowYears");
+// 2. 先获取一次当前年份（避免循环内重复计算，提升效率）
+const currentYear = new Date().getFullYear();
+// 3. 遍历所有匹配的元素并赋值
+if (yearElements.length > 0) { // 确保有匹配元素时才执行
+  for (let i = 0; i < yearElements.length; i++) {
+    yearElements[i].innerHTML = currentYear;
+  }
 }
