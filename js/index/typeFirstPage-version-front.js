@@ -17,10 +17,10 @@ let fx67llStringList = [
 	// "作为浩鲸3年生，fx67ll 将继续致力于提升 DMC 的前端交互使用体验，并努力转型为 DMC 团队里的一名全栈开发工程师 🐳⌨️💻",
 	"作为浩鲸3年生，fx67ll 将聚焦 AI 领域深度学习，不断强化全栈开发工程师的职业技术素养，努力做好每一件小事 🐳⌨️💻",
 	"fx67ll 在前端开发工作领域掌握 Html5/Css3、JS/TS、Sass/Less、Vue/React全家桶、ElementUI/AntDesign/ArcoDesign组件库、Umi、Echarts/D3js、uni-app、Three.js、OpenLayers/Cesium/ArcGis、乾坤前端微应用加载器 🔨🔧⚙️",
-	"fx67ll 在后端开发工作领域掌握 Java、SpringBoot/SpringCloud、MySQL/Redis/MongoDB、Nodejs/Express、Linux、Nginx、Jeckins 🧱⛱️🎊",
+	"fx67ll 在后端开发工作领域掌握 Java、SpringBoot/SpringCloud、MySQL/Redis/MongoDB、Nodejs/Express、Linux、Nginx、Jenkins 🧱⛱️🎊",
 	// "在这里可以了解到工作这些年 fx67ll 所掌握的各种技术技能点 🧵🧶🕹️",
 	// "主要包括 fx67ll 在前端开发工作领域所掌握的各类技术框架组件 Html5/Css3、JS/TS、Sass/Less、Vue/React全家桶、Ele/Ant/Arco组件库、Umi、Echarts/D3js、uni-app、Threejs、OpenLayers/Cesium/ArcGis、乾坤前端微应用加载器 🔨🔧⚙️",
-	// "以及包括 fx67ll 在工作生活之余自己所研究的web后端以及数据库开发技术框架Java、SpringBoot/Cloud、MySQL/Redis/MongoDB、Nodejs/Express、Linux、Nginx、Jeckins 🧱⛱️🎊",
+	// "以及包括 fx67ll 在工作生活之余自己所研究的web后端以及数据库开发技术框架Java、SpringBoot/Cloud、MySQL/Redis/MongoDB、Nodejs/Express、Linux、Nginx、Jenkins 🧱⛱️🎊",
 	"首页的废话即将要说完了，通过点击页面中的任意位置来查看下一页吧 🖱️🖱️🖱️",
 	"点击查看下一页吧️ 🎉🎉🎉"
 ];
