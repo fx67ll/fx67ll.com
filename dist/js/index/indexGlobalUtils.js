@@ -86,7 +86,6 @@ if (document.getElementsByClassName("fx67ll-jenkins")) {
 // For Love
 if (document.getElementById("fx67ll-nan")) {
 	$('#fx67ll-nan').click(function() {
-		// window.open('https://guonan.love');
 		window.open('https://love.fx67ll.com');
 		console.log("I love u three thousand times！！！");
 	});

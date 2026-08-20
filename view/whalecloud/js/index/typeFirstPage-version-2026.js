@@ -110,7 +110,6 @@ const typeNextEgg = () => {
   $('#fx67ll-typed-box').html("Welcome <strong><em class='fx67ll-a'>https://fx67ll.com</em></strong> ~"); // 添加隐藏彩蛋，for Love
   if (document.getElementsByClassName('fx67ll-a')) {
     $('.fx67ll-a').click(function () {
-      // window.open('https://guonan.love');
       window.open('https://love.fx67ll.com');
     });
   }
