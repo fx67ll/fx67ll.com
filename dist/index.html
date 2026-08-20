@@ -17,49 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/animations.css" />
 	<!-- fx67ll style -->
-	<link rel="stylesheet" type="text/css" href="css/fx67ll-base-global.css" />
-	<link rel="stylesheet" type="text/css" href="css/fx67ll-index-global.css" />
-	<link rel="stylesheet" type="text/css" href="css/fx67ll-animation.css" />
-
-	<!-- 本页面单独修改覆盖的样式 -->
-	<style type="text/css">
-		.fx67ll-resume-text {
-			text-indent: -26px;
-			margin-bottom: 30px;
-		}
-
-		.fx67ll-resume-text-long {
-			text-indent: -38px;
-		}
-
-		@media screen and (max-width: 768px) {
-			.fx67ll-resume-text {
-				text-indent: -4.3vw;
-			}
-
-			.fx67ll-resume-text-short {
-				text-indent: 0;
-			}
-
-			.fx67ll-resume-text-long {
-				text-indent: -7vw;
-			}
-		}
-
-		.fx67ll-bubble-url:hover {
-			color: #ef8e81;
-		}
-
-		@keyframes jumpUrl {
-			from {
-				top: -8px;
-			}
-
-			to {
-				top: 0px;
-			}
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/fx67ll.app.min.css" />
 </head>
 
 <body>
@@ -67,8 +25,13 @@
 		<div class="pt-page">
 			<div id="fx67ll-typed-box" class="L-mid-faith">
 				<span id="fx67ll-typed"></span>
-				<div id="fx67ll-typed-strings">
-					<p>欢迎到访 fx67ll 的个人主页站点，fx67ll 现已加入浩鲸🐋大家庭 <span id="workYear"></span> 😃😆🤪 </p>
+				<div id="fx67ll-typed-strings" hidden>
+					<p data-typed-message>欢迎到访 fx67ll 的个人主页站点，fx67ll 现已加入浩鲸🐋大家庭 <span id="workYear"></span> 😃😆🤪 </p>
+					<p data-typed-message>作为浩鲸3年生，fx67ll 将聚焦 AI 领域深度学习，不断强化全栈开发工程师的职业技术素养，努力做好每一件小事 🐳⌨️💻</p>
+					<p data-typed-message>fx67ll 在前端开发工作领域掌握 Html5/Css3、JS/TS、Sass/Less、Vue/React全家桶、ElementUI/AntDesign/ArcoDesign组件库、Umi、Echarts/D3js、uni-app、Three.js、OpenLayers/Cesium/ArcGis、乾坤前端微应用加载器 🔨🔧⚙️</p>
+					<p data-typed-message>fx67ll 在后端开发工作领域掌握 Java、SpringBoot/SpringCloud、MySQL/Redis/MongoDB、Nodejs/Express、Linux、Nginx、Jeckins 🧱⛱️🎊</p>
+					<p data-typed-message data-typed-group="closing">首页的废话即将要说完了，通过点击页面中的任意位置来查看下一页吧 🖱️🖱️🖱️</p>
+					<p data-typed-message data-typed-group="closing">点击查看下一页吧️ 🎉🎉🎉</p>
 				</div>
 			</div>
 		</div>
@@ -185,7 +148,7 @@
 	<div class="fx67ll-footer">
 		Designed & Powered by
 		<a href="https://nav.fx67ll.com" target="_blank">fx67ll</a>
-		&#12288; Copyright© 2018- <span id="nowYear" /> &#12288;
+		&#12288; Copyright© 2018- <span id="nowYear"></span> &#12288;
 		<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">皖ICP备18017174号</a>
 	</div>
 
@@ -197,14 +160,36 @@
 	<!-- Type Animation -->
 	<script src="js/utils/jquery.resize.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/utils/typed.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/index/typeFirstPage.js" type="text/javascript" charset="utf-8"></script>
-
-	<!-- fx67ll utils -->
-	<script src="js/index/indexGlobalUtils.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/index/countDateTimeUtils.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index/fx67ll.app.min.js" type="text/javascript" charset="utf-8"></script>
 
 	<script type="text/javascript">
-		console.log('Last updated: March 3, 2025');
+		Fx67ll.site.init({
+			yearSelector: '#nowYear',
+			lastUpdated: 'March 3, 2025'
+		});
+
+		Fx67ll.countdown.start({
+			selector: '#workYear',
+			since: '2022-10-09T09:00:00+08:00',
+			labels: {
+				days: '天',
+				hours: '时',
+				minutes: '分',
+				seconds: '秒'
+			}
+		});
+
+		Fx67ll.typing.start({
+			containerSelector: '#fx67ll-typed-box',
+			outputSelector: '#fx67ll-typed',
+			messagesSelector: '#fx67ll-typed-strings',
+			typeSpeed: 28,
+			startDelay: 188,
+			stageDelay: 888,
+			easterEggDelay: 4498,
+			easterEggHtml: "Welcome <strong><em class='fx67ll-a'>https://fx67ll.com</em></strong> ~",
+			easterEggUrl: 'https://love.fx67ll.com'
+		});
 	</script>
 </body>
 
