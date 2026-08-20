@@ -1,0 +1,61 @@
+/* ----------------------------------------- */
+.pt-page {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.L-mid-faith {
+	/* 为了追求视觉上的的舒服我稍微调整了一下位置，就酱儿 */
+	max-width: 70%;
+	position: relative;
+	bottom: 2vw;
+	font-family: "PFR";
+	/* font-size: 2.8rem; */
+	font-size: 1.8vw;
+	color: #2ECC71;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+/* 支持一下 iPad mini 宽度以下的设备字体稍稍放大 */
+@media screen and (max-width: 768px) {
+	.pt-page {
+		text-align: center;
+	}
+
+	.L-mid-faith {
+		font-size: 3.8vw;
+	}
+}
+
+
+/* ----------------------------------------- */
+.fx67ll-resume {
+	text-align: left;
+	word-wrap: break-word;
+}
+
+.fx67ll-resume-text {
+	display: inline-block;
+	text-indent: -2.1vw;
+	margin-bottom: 2.6vw;
+}
+
+.fx67ll-resume-text-short {
+	text-indent: 0;
+}
+
+.fx67ll-resume-text-long {
+	text-indent: -3.1vw;
+}
