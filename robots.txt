@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /img
-Sitemap: https://fx67ll.com/sitemap.xml
