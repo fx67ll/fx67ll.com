@@ -1,25 +1,19 @@
-<!-- 只有这个页面执行这个命令得行 -->
-<!-- font-spider --font-path ./fonts/PingFang Regular.ttf index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="baidu-site-verification" content="codeva-xlvlCThG8g" />
+	<meta name="baidu-site-verification" content="codeva-lLPcP4gYnU" />
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>fx67ll的个人主页</title>
 	<meta name="author" content="dankefx67llpr@gmail.com" />
-	<meta name="description" content="fx67ll的个人主页" />
-	<meta name="keywords" content="fx67ll fx67ll.com fx67ll的个人主页" />
-	<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> -->
+	<meta name="description" content="fx67ll的个人主页">
+	<meta name="keywords" content="fx67ll fx67ll.com fx67ll的个人主页">
 	<link rel="shortcut icon" type="image/x-icon" href="https://test.fx67ll.com/fx67ll-img-collection/fx67ll.jpg" />
-	<!-- Page Transition -->
-	<link rel="stylesheet" type="text/css" href="lib/css/component.css" />
-	<link rel="stylesheet" type="text/css" href="lib/css/animations.css" />
-	<!-- fx67ll style -->
-	<link rel="stylesheet" type="text/css" href="lib/css/fx67ll-base-global.css" />
-	<link rel="stylesheet" type="text/css" href="lib/css/fx67ll-index-global.css" />
-	<link rel="stylesheet" type="text/css" href="lib/css/fx67ll-animation.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/fx67ll.base.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/fx67ll.app.css" />
 </head>
 
 <body>
@@ -124,25 +118,41 @@
 	<div class="fx67ll-footer">
 		Designed & Powered by
 		<a href="https://nav.fx67ll.com" target="_blank">fx67ll</a>
-		&#12288; Copyright© 2018- <span id="nowYear">2026</span> &#12288;
+		&#12288; Copyright© 2018- <span id="nowYear"></span> &#12288;
 		<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">皖ICP备18017174号</a>
 	</div>
 
-	<!-- Page Transition -->
-	<script src="lib/js/utils/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
-	<script src="lib/js/utils/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="lib/js/utils/pagetransitions.js" type="text/javascript" charset="utf-8"></script>
-
-	<!-- Type Animation -->
-	<script src="lib/js/utils/jquery.resize.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="lib/js/utils/typed.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="lib/js/index/typeFirstPage-version-2018.js" type="text/javascript" charset="utf-8"></script>
-
-	<!-- fx67ll utils -->
-	<script src="lib/js/index/indexGlobalUtils.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/js/fx67ll.base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/js/fx67ll.app.js" type="text/javascript" charset="utf-8"></script>
 
 	<script type="text/javascript">
-		console.log('Last updated: August 20, 2026');
+		Fx67ll.site.init({
+			yearSelector: '#nowYear',
+			lastUpdated: 'Aug 20, 2026'
+		});
+
+		Fx67ll.countdown.start({
+			selector: '#workYear',
+			since: '2022-10-09T09:00:00+08:00',
+			labels: {
+				days: '天',
+				hours: '时',
+				minutes: '分',
+				seconds: '秒'
+			}
+		});
+
+		Fx67ll.typing.start({
+			containerSelector: '#fx67ll-typed-box',
+			outputSelector: '#fx67ll-typed',
+			messagesSelector: '#fx67ll-typed-strings',
+			typeSpeed: 28,
+			startDelay: 188,
+			stageDelay: 888,
+			easterEggDelay: 4498,
+			easterEggHtml: "Welcome <strong><em class='fx67ll-a'>https://fx67ll.com</em></strong> ~",
+			easterEggUrl: 'https://love.fx67ll.com'
+		});
 	</script>
 </body>
 
