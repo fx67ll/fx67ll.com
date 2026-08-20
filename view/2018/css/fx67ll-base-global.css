@@ -33,6 +33,7 @@ body::-webkit-scrollbar {
 .fx67ll-footer {
 	width: 100%;
 	padding: 20px 0;
+	font-size: 1vw;
 	text-align: center;
 	position: absolute;
 	bottom: 0;

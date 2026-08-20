@@ -23,8 +23,11 @@ https://fx67ll.com
 ### 技术博客
 https://fx67ll.xyz
 
-### 个人站点导航
+### 站点导航
 https://nav.fx67ll.com
+
+### 给我留言
+https://fx67ll.xyz/s/messageboard
 
 #### fx67ll's Logo
 ![fx67ll](/upload/2021/11/fx67ll-7fdba27ca716457291bee6db48306e10.JPG)
