@@ -1,0 +1,58 @@
+body {
+  --color-text: #0f070a;
+  --color-bg: #fabd69;
+  --color-bg-2: #f98e4a;
+  --color-link: #317bd0;
+  --color-link-hover: #317bd0;
+  background: radial-gradient(
+    ellipse at 100% 0,
+    #fed96f 0,
+    var(--color-bg) 50%,
+    var(--color-bg-2) 115%
+  );
+}
+
+.overlay {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.overlay:focus-visible {
+  outline: 2px solid rgba(253, 255, 252, 0.9);
+  outline-offset: -8px;
+}
+
+.fx67ll-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100000;
+  padding: 0.8rem 1rem calc(0.8rem + env(safe-area-inset-bottom));
+  color: rgba(15, 7, 10, 0.68);
+  font: 0.72rem/1.5 Futura, "Trebuchet MS", sans-serif;
+  letter-spacing: 0.04em;
+  text-align: center;
+  user-select: text;
+}
+
+.fx67ll-footer a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 180ms ease, text-shadow 180ms ease;
+}
+
+.fx67ll-footer a:hover,
+.fx67ll-footer a:focus-visible {
+  color: #0f070a;
+  text-shadow: 0 0 0.8rem rgba(253, 255, 252, 0.75);
+}
+
+@media (max-width: 520px) {
+  .fx67ll-footer {
+    padding-right: 0.65rem;
+    padding-left: 0.65rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.02em;
+  }
+}

@@ -1,84 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>fx67ll的个人主页</title>
-	<meta name="description" content="fx67ll的个人主页">
-	<meta name="keywords" content="fx67ll, fx67ll.com, fx67ll的个人主页">
-	<meta name="author" content="dankefx67llpr@gmail.com">
-	<!-- <link rel="icon" type="image/jpeg"  href="img/favicon.ico"> -->
-	<link rel="icon" type="image/jpeg" href="https://test.fx67ll.com/fx67ll-img-collection/fx67ll.jpg">
-	<link rel="stylesheet" href="css/fx67ll.base.min.css">
-	<link rel="stylesheet" href="css/fx67ll.app.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fx67ll的个人主页</title>
+  <meta name="description" content="fx67ll的个人主页">
+  <meta name="keywords" content="fx67ll, fx67ll.com, fx67ll的个人主页">
+  <meta name="author" content="dankefx67llpr@gmail.com">
+  <!-- <link rel="icon" type="image/jpeg"  href="lib/img/favicon.ico"> -->
+  <link rel="icon" type="image/jpeg" href="https://test.fx67ll.com/fx67ll-img-collection/fx67ll.jpg">
+  <link href="lib/css/vendors.css" rel="stylesheet" />
+  <link href="lib/css/energy.css" rel="stylesheet" />
 </head>
 
 <body>
-	<div id="pt-main" class="pt-perspective">
-		<div class="pt-page">
-			<div id="fx67ll-typed-box" class="L-mid-faith">
-				<span id="fx67ll-typed"></span>
-				<div id="fx67ll-typed-strings" hidden>
-					<p data-typed-message>font-spider 中文字体包扫描专用，fx67ll 已成为码农 <span id="workYear"></span></p>
-				</div>
-			</div>
-		</div>
+  <div
+    class="overlay"
+    role="button"
+    tabindex="0"
+    aria-label="Open fx67ll resume"
+    title="Open fx67ll resume"
+  ></div>
 
-		<!-- font-spider index.html Scanner List -->
-		<div class="pt-page">
-			<div class="L-mid-faith">
-				一二三四五六七八九十零年月日天时分秒在这小的宇宙里遇见你种棵树最好间是前其次现无限大梦後何世中山有木兮卿意昨夜星辰恰似看皮囊千篇律趣灵魂百挑生活从不缺少美而双发眼睛学会思考停止盲夏定利冠军点击惊喜新计
-				划已经失败接下来只更加努力没退路代任人都机快速深入某项专业技能对于高度依赖化码农说既危也过去验够让我赢起跑线使得通敏锐直觉拓展多面平等再信息差与方案被提出并应用效率倍放掌握开者言存往成为优势凭借可维消
-				除炼呈指数级升精端核心术具备标准工程独立搭建护个主页和博客熟练栈及态复杂务场景架构流框拥丰富公共组件封装设私包部署以访问查库相关资料文档运型示例目阿低引擎物完自义导台调试动了解悉据视想源结合德地图服屏
-				需求理空功落移微序众号打常坑刻认识作品制简单模析曾余做些实际乾坤载器后基本反向持续整套团队协光顾社区习秀总到题写布就毕跳转探索战体系企决全进行式管跃沿输坚沉淀知享周浩鲸将继致交互名师领域各类要括之研究
-				聚焦断强职素养每事欢迎历站家庭所桶己浏览还首废话即位置哦吧语网上擅长样表统禅道国期编环境命令脚句询清洗仓论织离执换算子取特征集操处配非迁传志采负均衡容错元血缘治逻辑监控供内
-			</div>
-			<div class="L-mid-faith">
-				0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz，。~！？,.!?なのもいじゃ|:()๑•̀ㅂ́و✧️</div>
-		</div>
-	</div>
+  <footer class="fx67ll-footer">
+    <span>Designed &amp; Powered by</span>
+    <a href="https://nav.fx67ll.com" target="_blank" rel="noopener noreferrer">fx67ll</a>
+    <span>&#12288; Copyright&copy; 2018- </span><span id="nowYear"></span><span> &#12288;</span>
+    <a
+      href="https://beian.miit.gov.cn/#/Integrated/index"
+      target="_blank"
+      rel="noopener noreferrer"
+    >皖ICP备18017174号</a>
+  </footer>
+  <script type="text/javascript" src="lib/js/vendors.js"></script>
+  <script type="text/javascript" src="lib/js/energy.js"></script>
+  <script>
+    (() => {
+      const resumeUrl = "https://resume.fx67ll.com";
+      const overlay = document.querySelector(".overlay");
+      const openResume = () => window.open(resumeUrl, "_blank");
 
-	<div class="fx67ll-footer">
-		Designed & Powered by
-		<a href="https://nav.fx67ll.com" target="_blank">fx67ll</a>
-		&#12288; Copyright© 2018- <span id="nowYear"></span> &#12288;
-		<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">皖ICP备18017174号</a>
-	</div>
-
-	<script src="lib/js/fx67ll.base.js" type="text/javascript" charset="utf-8"></script>
-	<script src="lib/js/fx67ll.app.js" type="text/javascript" charset="utf-8"></script>
-
-	<script type="text/javascript">
-		Fx67ll.site.init({
-			yearSelector: '#nowYear',
-			lastUpdated: 'Aug 20, 2026'
-		});
-
-		Fx67ll.countdown.start({
-			selector: '#workYear',
-			since: '2018-05-28T09:00:00+08:00',
-			labels: {
-				days: '天',
-				hours: '时',
-				minutes: '分',
-				seconds: '秒'
-			}
-		});
-
-		Fx67ll.typing.start({
-			containerSelector: '#fx67ll-typed-box',
-			outputSelector: '#fx67ll-typed',
-			messagesSelector: '#fx67ll-typed-strings',
-			typeSpeed: 28,
-			startDelay: 188,
-			stageDelay: 888,
-			easterEggDelay: 4498,
-			easterEggHtml: "Welcome <strong><em class='fx67ll-a'>https://fx67ll.com</em></strong> ~",
-			easterEggUrl: 'https://love.fx67ll.com'
-		});
-	</script>
+      overlay.addEventListener("click", openResume);
+      overlay.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openResume();
+        }
+      });
+      document.querySelector("#nowYear").textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 
 </html>
