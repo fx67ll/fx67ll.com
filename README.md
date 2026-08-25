@@ -1,4 +1,4 @@
-# 在技术领域默默耕耘属于自己的田地，不断进步 —— Stay Hungry Stay Foolish
+# 在技术领域默默耕耘属于自己的田地，不断进步</br>Stay Hungry Stay Foolish
 
 ## fx67ll.com
 
