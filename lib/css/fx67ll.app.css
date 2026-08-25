@@ -1,0 +1,153 @@
+/*! fx67ll.com application styles */
+@font-face {
+	font-family: "PFR";
+	src: url("../fonts/PingFang Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	--color-primary: #2ecc71;
+	--color-primary-light: #a9dfbf;
+	--color-primary-dark: #1e8449;
+	--color-primary-deep: #145a32;
+	--color-text: #0b3d24;
+	--color-bg: var(--color-primary);
+	--color-bg-2: var(--color-primary-dark);
+	--color-link: var(--color-primary-deep);
+	--color-link-hover: #0b3d24;
+	--font-sans: "PFR", "PingFang SC", "Microsoft YaHei", sans-serif;
+	background: radial-gradient(
+		ellipse at 100% 0,
+		var(--color-primary-light) 0,
+		var(--color-bg) 48%,
+		var(--color-bg-2) 118%
+	);
+	font-family: var(--font-sans);
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+}
+
+.fx67ll-identity {
+	position: fixed;
+	top: calc(50% + clamp(2.9rem, 8vw, 5.4rem));
+	left: 50%;
+	z-index: 1;
+	width: min(90vw, 42rem);
+	color: var(--color-text);
+	text-align: center;
+	transform: translateX(-50%);
+}
+
+.fx67ll-identity-title {
+	margin: 0;
+	font-family: var(--font-sans);
+	font-size: clamp(1rem, 2.1vw, 1.35rem);
+	font-weight: 400;
+	line-height: 1.6;
+	letter-spacing: 0.24em;
+	text-indent: 0.24em;
+	text-shadow: 0 0.08rem 0.8rem rgba(213, 245, 227, 0.48);
+	opacity: 0;
+	animation: fx67llIdentityReveal 800ms 1.15s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.fx67ll-identity-title-link {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	transition: color 180ms ease, text-shadow 180ms ease;
+}
+
+.fx67ll-identity-title-link:hover,
+.fx67ll-identity-title-link:focus-visible {
+	color: var(--color-primary-deep);
+	text-shadow: 0 0.08rem 1rem rgba(234, 255, 242, 0.9);
+	transform: none;
+}
+
+.fx67ll-identity-title-link:focus-visible {
+	outline: 2px solid rgba(20, 90, 50, 0.72);
+	outline-offset: 0.45rem;
+}
+
+.fx67ll-visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.fx67ll-overlay {
+	background-color: var(--color-primary-deep);
+	pointer-events: none;
+}
+
+.fx67ll-footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100000;
+	padding: 0.8rem 1rem calc(0.8rem + env(safe-area-inset-bottom));
+	color: rgba(11, 61, 36, 0.76);
+	font: 400 0.72rem/1.5 var(--font-sans);
+	letter-spacing: 0.04em;
+	text-align: center;
+	user-select: text;
+}
+
+.fx67ll-footer a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 180ms ease, text-shadow 180ms ease;
+}
+
+.fx67ll-footer a:hover,
+.fx67ll-footer a:focus-visible {
+	color: var(--color-primary-deep);
+	text-shadow: 0 0 0.8rem rgba(213, 245, 227, 0.85);
+}
+
+@keyframes fx67llIdentityReveal {
+	from {
+		opacity: 0;
+		transform: translateY(0.8rem);
+	}
+
+	to {
+		opacity: 0.82;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 520px) {
+	.fx67ll-identity {
+		top: calc(50% + 3.4rem);
+	}
+
+	.fx67ll-identity-title {
+		letter-spacing: 0.16em;
+		text-indent: 0.16em;
+	}
+
+	.fx67ll-footer {
+		padding-right: 0.65rem;
+		padding-left: 0.65rem;
+		font-size: 0.65rem;
+		letter-spacing: 0.02em;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.fx67ll-identity-title {
+		opacity: 0.82;
+		animation: none;
+	}
+}

@@ -72,7 +72,7 @@ pre {
   white-space: pre-wrap;
 }
 q {
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: '\201C' '\201D' '\2018' '\2019';
 }
 small {
   font-size: 80%;
@@ -125,27 +125,30 @@ select {
   text-transform: none;
 }
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  appearance: button;
   -webkit-appearance: button;
   cursor: pointer;
 }
 button[disabled],
 html input[disabled] {
-  cursor: default;
+  /* cursor: default; */
+  cursor: pointer;
 }
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   box-sizing: border-box;
   padding: 0;
 }
-input[type="search"] {
+input[type='search'] {
+  appearance: textfield;
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 button::-moz-focus-inner,
@@ -195,7 +198,9 @@ a {
   text-decoration: none;
   color: var(--color-link);
   outline: none;
-  transition: color 0.2s, transform 0.2s;
+  transition:
+    color 0.2s,
+    transform 0.2s;
   transform: translate(0);
 }
 a:focus,
@@ -267,7 +272,7 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
 }
-.overlay {
+.fx67ll-overlay {
   position: absolute;
   pointer-events: none;
   top: 0;
@@ -301,7 +306,7 @@ a:hover {
     grid-template-columns: auto 1fr;
     -ms-grid-rows: auto auto auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "title     links" "...       ..." "github    demos";
+    grid-template-areas: 'title     links' '...       ...' 'github    demos';
   }
   .frame__title-wrap {
     grid-area: title;
@@ -317,7 +322,7 @@ a:hover {
     padding: 0 0 0 1rem;
   }
   .frame__tagline:before {
-    content: "";
+    content: '';
     position: absolute;
     right: 100%;
     top: 50%;
