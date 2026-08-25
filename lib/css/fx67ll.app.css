@@ -41,6 +41,7 @@ body {
 }
 
 .fx67ll-identity-title {
+	position: relative;
 	margin: 0;
 	font-family: var(--font-sans);
 	font-size: clamp(1rem, 2.1vw, 1.35rem);
@@ -82,6 +83,47 @@ body {
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
 	border: 0;
+}
+
+/* 品牌彩蛋：悬停「梵心临岚 凡溪聆林」时展示的随机个人作品链接气泡 */
+.fx67ll-brand-bubble {
+	position: absolute;
+	top: calc(100% + 0.75rem);
+	left: 50%;
+	display: block;
+	max-width: min(88vw, 30rem);
+	overflow: hidden;
+	padding: 0.32rem 0.85rem;
+	border: 1px solid rgba(20, 90, 50, 0.26);
+	border-radius: 0.6rem;
+	background: rgba(234, 255, 242, 0.94);
+	color: var(--color-primary-deep);
+	font-size: 0.78rem;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-shadow: 0 0.35rem 1rem rgba(11, 61, 36, 0.16);
+	pointer-events: none;
+	transform: translateX(-50%);
+	animation: fx67llBrandBubbleIn 240ms ease both;
+}
+
+.fx67ll-brand-bubble[hidden] {
+	display: none;
+}
+
+@keyframes fx67llBrandBubbleIn {
+	from {
+		opacity: 0;
+		transform: translateX(-50%) translateY(0.35rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(-50%) translateY(0);
+	}
 }
 
 .fx67ll-overlay {
