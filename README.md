@@ -18,16 +18,17 @@ my website
 - 足球，非脑残粉，但是会有些偏向于德甲的多特蒙德以及意大利国家队 ε=ε=ε=┏(゜ロ゜;)┛
 
 ### 个人主页
-https://fx67ll.com
+[fx67ll.com](https://fx67ll.com)
 
 ### 技术博客
-https://fx67ll.xyz
+[fx67ll.xyz](https://fx67ll.xyz)
 
 ### 站点导航
 https://nav.fx67ll.com
+[nav.fx67ll.com](https://nav.fx67ll.com)
 
 ### 给我留言
-https://fx67ll.xyz/s/messageboard
+[messageboard](https://fx67ll.xyz/s/messageboard)
 
 #### fx67ll's Logo
 ![fx67ll](/upload/2021/11/fx67ll-7fdba27ca716457291bee6db48306e10.JPG)
