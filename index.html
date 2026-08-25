@@ -16,13 +16,20 @@
 </head>
 
 <body>
-  <div
-    class="overlay"
-    role="button"
-    tabindex="0"
-    aria-label="Open fx67ll resume"
-    title="Open fx67ll resume"
-  ></div>
+  <main class="identity" aria-label="fx67ll.com 梵心临岚，凡溪聆林">
+    <h1 class="identity__title">
+      <span class="visually-hidden">fx67ll.com</span>
+      <a
+        class="identity__title-link"
+        href="https://resume.fx67ll.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="梵心临岚，凡溪聆林 - 打开 fx67ll 的个人简历"
+      >梵心临岚，凡溪聆林</a>
+    </h1>
+  </main>
+
+  <div class="overlay" aria-hidden="true"></div>
 
   <footer class="fx67ll-footer">
     <span>Designed &amp; Powered by</span>
@@ -38,17 +45,6 @@
   <script type="text/javascript" src="lib/js/energy.js"></script>
   <script>
     (() => {
-      const resumeUrl = "https://resume.fx67ll.com";
-      const overlay = document.querySelector(".overlay");
-      const openResume = () => window.open(resumeUrl, "_blank");
-
-      overlay.addEventListener("click", openResume);
-      overlay.addEventListener("keydown", (event) => {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          openResume();
-        }
-      });
       document.querySelector("#nowYear").textContent = new Date().getFullYear();
     })();
   </script>
