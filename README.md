@@ -25,7 +25,7 @@
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=454698121&auto=1&height=66"></iframe>
 
-音乐偏好很杂，可以直接看我的[网易云主页歌单](https://music.163.com/#/user/home?id=321230196)哟 (*/ω＼*)
+音乐偏好很杂，可以直接看我的[网易云主页歌单](https://y.music.163.com/m/user?id=321230196)哟 (*/ω＼*)
 
 ---
 
@@ -56,7 +56,7 @@
 
 - 💌 留言板：[fx67ll.xyz/s/messageboard](https://fx67ll.xyz/s/messageboard)
 - 📧 邮箱：[dankefx67llpr@gmail.com](mailto:dankefx67llpr@gmail.com)
-- 🎵 网易云：[我的主页歌单](https://music.163.com/#/user/home?id=321230196)
+- 🎵 网易云：[我的主页歌单](https://y.music.163.com/m/user?id=321230196)
 - 📺 BiliBili：[我的个人空间](https://m.bilibili.com/space/7589220)
 
 ---
