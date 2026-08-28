@@ -86,6 +86,75 @@ body {
 	border: 0;
 }
 
+/* 旧版主页传承的随机文案：安静地缀在品牌标题下方，随淡入淡出轮换（仅桌面端展示，由 JS 控制隐藏） */
+.fx67ll-faith {
+	display: block;
+	max-width: min(84vw, 34rem);
+	margin: 1.15rem auto 0;
+	padding: 0.2rem 0.5rem;
+	border: 0;
+	background: transparent;
+	color: rgba(11, 61, 36, 0.6);
+	font-family: var(--font-sans);
+	font-size: clamp(0.68rem, 1.5vw, 0.82rem);
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.8;
+	text-align: center;
+	cursor: pointer;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	opacity: 0;
+	animation: fx67llFaithReveal 800ms 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+	transition: opacity 420ms ease, color 180ms ease;
+}
+
+.fx67ll-faith:hover,
+.fx67ll-faith:focus-visible {
+	color: var(--color-primary-deep);
+}
+
+.fx67ll-faith:focus-visible {
+	outline: 2px solid rgba(20, 90, 50, 0.72);
+	outline-offset: 0.4rem;
+	border-radius: 0.4rem;
+}
+
+.fx67ll-faith[hidden] {
+	display: none;
+}
+
+/* 文案切换中：先淡出，换文本后再淡入 */
+.fx67ll-faith.fx67ll-faith-fading {
+	opacity: 0 !important;
+}
+
+/* 长文案（书籍摘录等）：缩小字号与字距，避免占据过多画面 */
+.fx67ll-faith.fx67ll-faith-long {
+	font-size: clamp(0.6rem, 1.2vw, 0.7rem);
+	letter-spacing: 0.05em;
+	line-height: 1.7;
+	max-width: min(88vw, 36rem);
+}
+
+/* 入场动画结束后由 JS 落定终态，避免后续切换时 reveal 动画被重复触发 */
+.fx67ll-faith.fx67ll-faith-shown {
+	animation: none;
+	opacity: 1;
+}
+
+@keyframes fx67llFaithReveal {
+	from {
+		opacity: 0;
+		transform: translateY(0.5rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 /* 品牌彩蛋：悬停「梵心临岚 凡溪聆林」时展示的随机个人作品链接气泡 */
 .fx67ll-brand-bubble {
 	position: absolute;
@@ -310,6 +379,11 @@ body {
 		text-indent: 0.16em;
 	}
 
+	.fx67ll-faith {
+		margin-top: 0.9rem;
+		letter-spacing: 0.06em;
+	}
+
 	.fx67ll-footer {
 		padding-right: 0.65rem;
 		padding-left: 0.65rem;
@@ -322,5 +396,11 @@ body {
 	.fx67ll-identity-title {
 		opacity: 0.82;
 		animation: none;
+	}
+
+	.fx67ll-faith {
+		opacity: 1;
+		animation: none;
+		transition: none;
 	}
 }
